@@ -102,6 +102,7 @@ footer.site ul{list-style:none;margin:0;padding:0}footer.site li{margin-bottom:6
 footer.site .legal{border-top:1px solid #2c3339;margin-top:36px;padding-top:18px;font-size:.85rem;color:#8c949b}
 .note{font-size:.92rem;color:var(--mut)}
 
+[id]{scroll-margin-top:84px}
 .ann{background:#000;color:#fff;font-size:.88rem;text-align:center;padding:8px 16px;font-weight:600}
 .ann a{color:#fff}.ann span{margin:0 14px;white-space:nowrap}@media(max-width:700px){.ann span:nth-child(n+2){display:none}}
 .store-main{background:#fff}
@@ -196,7 +197,7 @@ const alias={women:'W',men:'M'};
 function go(k){b.forEach(x=>x.setAttribute('aria-pressed',x.dataset.f===k));let n=0;
  cards.forEach(c=>{const ok=k==='all'||c.dataset.tags.split(' ').includes(k);c.hidden=!ok;if(ok)n++;});ct.textContent=n+' shoes';}
 b.forEach(x=>x.addEventListener('click',()=>{go(x.dataset.f);history.replaceState(null,'','#'+x.dataset.f)}));
-const h=decodeURIComponent(location.hash.slice(1));const k=alias[h]||h;if(k)go(k);
+function fromHash(){const h=decodeURIComponent(location.hash.slice(1));const k=alias[h]||h;if(k&&b.some(x=>x.dataset.f===k))go(k);}fromHash();addEventListener('hashchange',fromHash);
 })();
 </script>
 
