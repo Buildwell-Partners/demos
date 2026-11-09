@@ -275,7 +275,7 @@ const P=[{"id":7138757,"brand":"Brooks","model":"Adrenaline GTS 26","g":"W","gl"
   const v=Object.fromEntries(new FormData(f));const n=Object.keys(v).length;pr.style.width=(n/4*100)+'%';
   if(n<4){out.innerHTML='';return;}
   const use=v.use==='race'?'race':v.use;
-  let s=P.filter(p=>p.g===v.g).map(p=>{let sc=0;
+  let s=P.filter(p=>p.g===v.g&&!(v.wide==='no'&&/Wide/.test(p.model))).map(p=>{let sc=0;
    if(p.tags.includes(use))sc+=5; if(use==='trail'&&p.tags.includes('hike'))sc+=2;
    if(v.feel!=='any'&&p.tags.includes(v.feel))sc+=3; if(v.wide==='wide'&&p.tags.includes('wide'))sc+=3;
    if(p.tags.includes('new'))sc+=0.5; return [sc,p];}).filter(x=>x[0]>=5).sort((a,b)=>b[0]-a[0]).slice(0,3).map(x=>x[1]);
