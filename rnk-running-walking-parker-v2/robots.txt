@@ -1,0 +1,19 @@
+# Production robots.txt for rnkrunning.com (this concept preview itself is noindex)
+User-agent: *
+Disallow: /wp-content/uploads/wpforms/
+Allow: /
+
+# AI crawlers explicitly welcome
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://rnkrunning.com/sitemap.xml
