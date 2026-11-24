@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Byblos Express Greek &amp; Lebanese | Highlands Ranch, CO</title>
+<meta name="description" content="Byblos Express Greek &amp; Lebanese in Highlands Ranch: shawarma, gyros, lamb shank, falafel and fresh hummus. Dine in, take out, order online or book catering. 9385 S Colorado Blvd #105 · (720) 459-8312.">
+<style>
+@font-face{font-family:"Marcellus";src:url(fonts/marcellus-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Figtree";src:url(fonts/figtree-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Figtree";src:url(fonts/figtree-latin-600-normal.woff2) format("woff2");font-weight:600;font-display:swap}
+:root{--navy:#14304f;--navy-d:#0d2238;--aegean:#2a6f97;--olive:#6b7a3a;--sand:#f5ecdc;--stone:#fbf7f0;--terra:#c0622f;--gold:#d8a648;--ink:#1d2430;--muted:#5d6470;--line:#e6dccb}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Figtree",system-ui,sans-serif;color:var(--ink);background:var(--stone);line-height:1.65;font-size:17px}
+a{color:inherit}
+.wrap{width:min(1140px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:"Marcellus",Georgia,serif;font-weight:400;line-height:1.12;color:var(--navy)}
+h2{font-size:clamp(2.1rem,4.4vw,3.1rem)}
+.kicker{display:flex;align-items:center;gap:.7rem;font-weight:600;font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;color:var(--terra);margin-bottom:.8rem}
+.kicker::before{content:"";width:28px;height:2px;background:currentColor}
+.lead{color:var(--muted);max-width:62ch;margin-top:.8rem}
+.btn{display:inline-flex;align-items:center;gap:.55rem;padding:.95rem 1.55rem;border-radius:4px;font-weight:600;text-decoration:none;font-size:1rem;transition:transform .15s,background .2s;border:1.5px solid transparent;font-family:inherit;cursor:pointer;letter-spacing:.02em}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:18px;height:18px}
+.btn-terra{background:var(--terra);color:#fff}
+.btn-terra:hover{background:#a8532a}
+.btn-outline{border-color:rgba(255,255,255,.6);color:#fff}
+.btn-outline:hover{background:#fff;color:var(--navy)}
+.btn-navy{background:var(--navy);color:#fff}
+/* greek key band */
+.key{height:16px;background:
+ linear-gradient(90deg,var(--gold) 2px,transparent 2px) 0 0/16px 16px,
+ linear-gradient(var(--gold) 2px,transparent 2px) 0 0/16px 16px;opacity:.55}
+.top{position:sticky;top:0;z-index:20;background:var(--navy);color:#fff}
+.nav{display:flex;justify-content:space-between;align-items:center;height:70px;gap:1rem}
+.brand{text-decoration:none;color:#fff;font-family:"Marcellus";font-size:1.5rem;line-height:1;display:flex;align-items:center;gap:.7rem}
+.brand small{display:block;font-family:"Figtree";font-size:.66rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-top:.3rem}
+.brand svg{width:34px;height:34px;color:var(--gold);flex:0 0 34px}
+.nav ul{display:flex;gap:1.7rem;list-style:none;font-size:.95rem}
+.nav ul a{text-decoration:none;color:#cfdbe8}
+.nav ul a:hover{color:#fff}
+.nav .btn{padding:.6rem 1.05rem;font-size:.92rem}
+@media(max-width:900px){.nav ul{display:none}}
+@media(max-width:600px){.nav .btn{display:none}}
+/* hero */
+.hero{background:linear-gradient(120deg,var(--navy-d) 0%,var(--navy) 55%,#1e4a70 100%);color:#fff;position:relative;overflow:hidden;padding:clamp(56px,9vw,110px) 0}
+.hero::after{content:"";position:absolute;right:-120px;bottom:-200px;width:560px;height:560px;border-radius:50%;border:2px solid rgba(216,166,72,.35);box-shadow:0 0 0 40px rgba(216,166,72,.07),0 0 0 80px rgba(216,166,72,.04)}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.2fr .8fr;gap:3rem;align-items:center}
+.hero h1{color:#fff;font-size:clamp(2.7rem,6.4vw,4.7rem)}
+.hero h1 span{color:var(--gold)}
+.hero p{color:#d3deea;font-size:1.15rem;max-width:52ch;margin:1.3rem 0 2rem}
+.cta{display:flex;flex-wrap:wrap;gap:.9rem}
+.scores{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:6px;padding:1.8rem;display:grid;gap:1.2rem;backdrop-filter:blur(4px)}
+.score{display:flex;align-items:center;gap:1rem;border-bottom:1px solid rgba(255,255,255,.1);padding-bottom:1.1rem}
+.score:last-child{border-bottom:0;padding-bottom:0}
+.score .v{font-family:"Marcellus";font-size:2.6rem;color:var(--gold);line-height:1;min-width:76px}
+.score b{display:block;font-weight:600}
+.score small{color:#b5c5d6;font-size:.85rem}
+@media(max-width:880px){.hero-grid{grid-template-columns:1fr}}
+section{padding:clamp(64px,9vw,100px) 0}
+/* favorites */
+.favs{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.6rem}
+.fav{background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden;display:flex;flex-direction:column}
+.fav .art{height:150px;display:grid;place-items:center;position:relative;background:var(--bg,var(--sand))}
+.fav .art svg{width:74px;height:74px;color:var(--fg,var(--terra))}
+.fav .art::after{content:"";position:absolute;inset:12px;border:1px solid rgba(255,255,255,.5)}
+.fav .body{padding:1.5rem 1.5rem 1.7rem}
+.fav h3{font-size:1.45rem;margin-bottom:.35rem}
+.fav p{color:var(--muted);font-size:.97rem}
+.tagline{display:inline-block;margin-top:.8rem;font-size:.76rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--olive)}
+@media(max-width:900px){.favs{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.favs{grid-template-columns:1fr}}
+/* menu list */
+.menu{background:var(--sand)}
+.menu-cols{display:grid;grid-template-columns:1fr 1fr;gap:1rem 3.5rem;margin-top:2.4rem}
+.mi{display:flex;flex-direction:column;padding:1.1rem 0;border-bottom:1px dashed #d3c6ad}
+.mi b{font-family:"Marcellus";font-weight:400;font-size:1.25rem;color:var(--navy)}
+.mi span{color:var(--muted);font-size:.95rem}
+.mi em{font-style:normal;font-size:.74rem;font-weight:600;letter-spacing:.1em;color:var(--olive);text-transform:uppercase;margin-left:.4rem}
+.menu-note{margin-top:2rem;display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between;background:#fff;border:1px solid var(--line);padding:1.3rem 1.5rem;border-radius:6px}
+@media(max-width:760px){.menu-cols{grid-template-columns:1fr}}
+/* ways */
+.ways{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;margin-top:2.4rem}
+.way{border-top:3px solid var(--aegean);background:#fff;padding:1.6rem 1.4rem;border-radius:0 0 6px 6px;box-shadow:0 14px 30px -24px rgba(20,48,79,.5)}
+.way svg{width:34px;height:34px;color:var(--aegean);margin-bottom:.8rem}
+.way h3{font-size:1.3rem;margin-bottom:.3rem}
+.way p{color:var(--muted);font-size:.95rem}
+@media(max-width:900px){.ways{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.ways{grid-template-columns:1fr}}
+/* catering band */
+.cater{background:var(--olive);color:#fff;text-align:center}
+.cater h2{color:#fff}
+.cater p{color:#eef0dd;max-width:58ch;margin:1rem auto 2rem}
+/* visit */
+.visit-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;margin-top:2.4rem}
+.map{border-radius:6px;overflow:hidden;border:1px solid var(--line);min-height:380px;background:var(--sand)}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+.card{background:#fff;border:1px solid var(--line);border-radius:6px;padding:1.8rem}
+.card h3{font-size:1.5rem;margin-bottom:.8rem}
+.hours{width:100%;border-collapse:collapse}
+.hours td{padding:.6rem 0;border-bottom:1px solid var(--line)}
+.hours td:last-child{text-align:right;color:var(--muted)}
+.note{font-size:.85rem;color:var(--muted);margin-top:.8rem}
+@media(max-width:860px){.visit-grid{grid-template-columns:1fr}}
+/* contact */
+.contact{background:var(--navy);color:#fff}
+.contact h2{color:#fff}
+.contact .lead{color:#c9d6e3}
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:3rem}
+.cinfo{list-style:none;display:grid;gap:1rem;margin-top:1.8rem}
+.cinfo li{display:flex;gap:.9rem;align-items:center}
+.cinfo .ic{width:48px;height:48px;border:1px solid rgba(216,166,72,.5);border-radius:50%;display:grid;place-items:center;color:var(--gold);flex:0 0 48px}
+.cinfo .ic svg{width:21px;height:21px}
+.cinfo small{display:block;font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:#9fb3c8}
+.cinfo a{color:#fff;font-weight:600;text-decoration:none}
+form{background:var(--stone);color:var(--ink);border-radius:6px;padding:2rem;display:grid;gap:1rem}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+label{font-size:.86rem;font-weight:600;color:var(--muted);display:grid;gap:.35rem}
+input,select,textarea{font:inherit;font-weight:400;padding:.8rem .9rem;border:1px solid #d6cbb8;border-radius:4px;background:#fff;width:100%;color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--aegean);outline-offset:1px}
+textarea{min-height:110px;resize:vertical}
+@media(max-width:860px){.contact-grid{grid-template-columns:1fr}}
+@media(max-width:520px){.row2{grid-template-columns:1fr}}
+footer{background:var(--navy-d);color:#9fb3c8;padding:2.6rem 0 2rem;font-size:.93rem}
+.fgrid{display:flex;flex-wrap:wrap;gap:1.2rem;justify-content:space-between;align-items:center}
+footer a{color:var(--gold);text-decoration:none}
+.disclaimer{text-align:center;font-size:.78rem;color:#7c90a6;margin-top:1.8rem;padding-top:1.2rem;border-top:1px solid rgba(255,255,255,.08)}
+.mobile-call{display:none}
+@media(max-width:600px){.mobile-call{display:flex;position:fixed;left:16px;right:16px;bottom:14px;z-index:30;justify-content:center}body{padding-bottom:74px}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"Byblos Express Greek & Lebanese","servesCuisine":["Greek","Lebanese","Mediterranean"],"telephone":"+1-720-459-8312","address":{"@type":"PostalAddress","streetAddress":"9385 S Colorado Blvd, Unit 105","addressLocality":"Highlands Ranch","addressRegion":"CO","postalCode":"80126","addressCountry":"US"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday"],"opens":"10:30","closes":"21:30"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Friday","Saturday"],"opens":"10:30","closes":"22:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"10:30","closes":"21:00"}],"hasMenu":"https://www.toasttab.com/local/order/bybloshighlandsranch","acceptsReservations":false}
+</script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap nav">
+    <a class="brand" href="#top"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 4c-6 6-6 26 0 32M20 4c6 6 6 26 0 32M8 14c6 3 18 3 24 0M8 26c6-3 18-3 24 0"/><circle cx="20" cy="20" r="16"/></svg><span>Byblos Express<small>Greek &amp; Lebanese</small></span></a>
+    <ul>
+      <li><a href="#favorites">Favorites</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#catering">Catering</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <a class="btn btn-terra" href="tel:+17204598312">(720) 459-8312</a>
+  </div>
+</header>
+<div class="key" aria-hidden="true"></div>
+<main id="top">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="kicker" style="color:var(--gold)">Highlands Ranch · Colorado Blvd</div>
+      <h1>Shawarma, gyros &amp; <span>lamb shank</span>, done right.</h1>
+      <p>Fast-casual Greek and Lebanese cooking in Highlands Ranch: generous plates, house hummus and warm pita, with dine-in, takeout, online ordering and catering for your next gathering.</p>
+      <div class="cta">
+        <a class="btn btn-terra" href="tel:+17204598312"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call to order</a>
+        <a class="btn btn-outline" href="https://www.toasttab.com/local/order/bybloshighlandsranch" rel="noopener">Order online</a>
+      </div>
+    </div>
+    <div class="scores" aria-label="Guest ratings">
+      <div class="score"><span class="v">4.8</span><div><b>Restaurantji</b><small>from 400+ ratings</small></div></div>
+      <div class="score"><span class="v">4.7</span><div><b>DoorDash</b><small>from 1,000+ ratings</small></div></div>
+      <div class="score"><span class="v">4.5</span><div><b>Yelp</b><small>from 130+ reviews</small></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="favorites">
+  <div class="wrap">
+    <div class="kicker">House favorites</div>
+    <h2>What Highlands Ranch keeps ordering</h2>
+    <p class="lead">Guests consistently rate the food highly, especially the shawarma and gyros, plus the pita, hummus and tahini.</p>
+    <div class="favs">
+      <article class="fav"><div class="art" style="--bg:#f3dfcf;--fg:var(--terra)"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 46c6 6 30 6 36 0L42 14c-4-4-16-4-20 0z"/><path d="M20 26h24M19 34h26M18 42h28"/></svg></div><div class="body"><h3>Chicken Shawarma</h3><p>Chicken shawarma as a sandwich, or as a plate with rice, hummus and salad.</p><span class="tagline">Sandwich · Plate</span></div></article>
+      <article class="fav"><div class="art" style="--bg:#dfe8ef;--fg:var(--aegean)"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 40c0-12 10-22 22-22s22 10 22 22z"/><path d="M8 44h48M22 30c3-3 7-4 10-4"/></svg></div><div class="body"><h3>Gyros</h3><p>A classic gyro sandwich, or pair gyro meat with chicken shawarma on the combination plate.</p><span class="tagline">Sandwich · Combo plate</span></div></article>
+      <article class="fav"><div class="art" style="--bg:#e6e8d4;--fg:var(--olive)"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="32" cy="40" rx="24" ry="10"/><path d="M24 36c-4-10 0-22 8-24 6 4 6 14 2 22"/></svg></div><div class="body"><h3>Lamb Shank</h3><p>Gluten-free lamb shank served over rice with hummus, feta salad and tzatziki.</p><span class="tagline">Gluten-free</span></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="menu">
+  <div class="wrap">
+    <div class="kicker">From the menu</div>
+    <h2>A taste of the menu</h2>
+    <p class="lead">A sample of what's on the menu. See the full, current menu and prices on our online ordering page.</p>
+    <div class="menu-cols">
+      <div class="mi"><b>Combination Plate</b><span>Chicken shawarma and gyro meat with hummus, tzatziki, rice and feta salad.</span></div>
+      <div class="mi"><b>Lamb Shank <em>GF</em></b><span>Over rice with hummus, feta salad and tzatziki.</span></div>
+      <div class="mi"><b>Gyros Sandwich</b><span>The Greek classic, wrapped in warm pita.</span></div>
+      <div class="mi"><b>Chicken Shawarma Sandwich</b><span>Lebanese-style shawarma wrapped to go.</span></div>
+      <div class="mi"><b>Hummus</b><span>House-made and always a guest favorite. Great with pita.</span></div>
+      <div class="mi"><b>Falafel</b><span>Crispy fried chickpeas with garlic, onion and cilantro.</span></div>
+      <div class="mi"><b>Lunch Specials</b><span>Lunch-sized plates, including a chicken shawarma plate.</span></div>
+      <div class="mi"><b>Family Package</b><span>A big spread built to feed the whole table.</span></div>
+      <div class="mi"><b>Biscoff Cheesecake</b><span>Save room for dessert.</span></div>
+    </div>
+    <div class="menu-note"><span>Prices and availability change. The online menu is always up to date.</span><a class="btn btn-navy" href="https://www.toasttab.com/local/order/bybloshighlandsranch" rel="noopener">View full menu &amp; order</a></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="kicker">Your way</div>
+    <h2>Dine in, pick up or have it delivered</h2>
+    <div class="ways">
+      <div class="way"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 3v8a3 3 0 0 0 6 0V3M7 3v18M17 21V3c-2 1-3 4-3 7v4h3"/></svg><h3>Dine in</h3><p>Grab a table at our Colorado Blvd location.</p></div>
+      <div class="way"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 8h14l-1 13H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><h3>Takeout</h3><p>Call ahead or order online and pick it up hot.</p></div>
+      <div class="way"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="7" width="12" height="10" rx="1"/><path d="M14 10h4l3 3v4h-7"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg><h3>Delivery</h3><p>Available through DoorDash and Uber Eats.</p></div>
+      <div class="way"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 18h18M5 18a7 7 0 0 1 14 0M12 8V6"/></svg><h3>Catering</h3><p>Trays for the office, parties and family events.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="catering" class="cater">
+  <div class="wrap">
+    <h2>Feeding a crowd? We cater.</h2>
+    <p>Office lunches, birthdays, team meetings and holiday get-togethers. Shawarma, gyros, hummus, falafel and sides, packed and ready. Tell us your date and headcount and we'll put it together.</p>
+    <a class="btn btn-terra" href="#contact">Request a catering quote</a>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="wrap">
+    <div class="kicker">Visit</div>
+    <h2>Find us on Colorado Boulevard</h2>
+    <div class="visit-grid">
+      <div class="map"><iframe title="Map to Byblos Express, 9385 S Colorado Blvd Unit 105, Highlands Ranch, CO" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=9385%20S%20Colorado%20Blvd%20Unit%20105%2C%20Highlands%20Ranch%2C%20CO%2080126&amp;output=embed"></iframe></div>
+      <div class="card">
+        <h3>Hours</h3>
+        <table class="hours">
+          <tr><td>Monday – Thursday</td><td>10:30 am – 9:30 pm</td></tr>
+          <tr><td>Friday – Saturday</td><td>10:30 am – 10:00 pm</td></tr>
+          <tr><td>Sunday</td><td>10:30 am – 9:00 pm</td></tr>
+        </table>
+        <p class="note">Holiday hours may vary. Please call ahead to confirm.</p>
+        <p style="margin-top:1.2rem"><b>9385 S Colorado Blvd, Unit 105</b><br>Highlands Ranch, CO 80126</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <div class="kicker" style="color:var(--gold)">Contact</div>
+      <h2>Questions, big orders &amp; catering</h2>
+      <p class="lead">Call us for quick orders. For catering, send your date, headcount and what you're craving, and we'll follow up.</p>
+      <ul class="cinfo">
+        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span><div><small>Phone</small><a href="tel:+17204598312">(720) 459-8312</a></div></li>
+        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 8h14l-1 13H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg></span><div><small>Order online</small><a href="https://www.toasttab.com/local/order/bybloshighlandsranch" rel="noopener">Toast online ordering</a></div></li>
+        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span><div><small>Address</small>9385 S Colorado Blvd #105, Highlands Ranch</div></li>
+      </ul>
+    </div>
+    <form onsubmit="event.preventDefault();this.querySelector('button').textContent='Thanks! (demo form)';">
+      <div class="row2">
+        <label>Name<input name="name" autocomplete="name" required></label>
+        <label>Phone<input name="phone" type="tel" autocomplete="tel" required></label>
+      </div>
+      <div class="row2">
+        <label>Event date<input name="date" type="date"></label>
+        <label>Headcount<input name="count" type="number" min="1" placeholder="e.g. 25"></label>
+      </div>
+      <label>Request type<select name="type"><option>Catering quote</option><option>Large pickup order</option><option>General question</option></select></label>
+      <label>Details<textarea name="msg" placeholder="Menu ideas, dietary needs, pickup or delivery…"></textarea></label>
+      <button class="btn btn-terra" type="submit">Send request</button>
+    </form>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div><b style="font-family:Marcellus;font-weight:400;color:#fff;font-size:1.2rem">Byblos Express Greek &amp; Lebanese</b><br>9385 S Colorado Blvd, Unit 105 · Highlands Ranch, CO 80126</div>
+      <div><a href="tel:+17204598312">(720) 459-8312</a> · <a href="https://www.toasttab.com/local/order/bybloshighlandsranch" rel="noopener">Order online</a></div>
+    </div>
+    <p class="disclaimer">Concept preview prepared for Byblos Express Greek &amp; Lebanese by Buildwell Partners. Not the business's official website.</p>
+  </div>
+</footer>
+<a class="btn btn-terra mobile-call" href="tel:+17204598312">Call (720) 459-8312</a>
+</body>
+</html>
