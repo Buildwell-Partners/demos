@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Carniceria Aurora | Mexican Butcher Shop, Market &amp; Restaurant on Havana St</title>
+<meta name="description" content="Carniceria Aurora — a family, woman-owned Mexican carnicería, grocery and counter-service restaurant at 465 N Havana St, Aurora, CO. Tacos, burritos, tortas, weekend tamales. SNAP/EBT accepted. Call (303) 366-9851.">
+<style>
+@font-face{font-family:"Alfa Slab One";src:url(fonts/alfa-slab-one-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Work Sans";src:url(fonts/work-sans-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Work Sans";src:url(fonts/work-sans-latin-600-normal.woff2) format("woff2");font-weight:600;font-display:swap}
+:root{--red:#b3261e;--red-d:#8c1c16;--green:#1f6b45;--green-d:#174f34;--gold:#f2b632;--pink:#e2477a;--cream:#fff8ec;--paper:#fdf1dc;--ink:#2b1d14;--muted:#6b5647;--line:#ecd9bb}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Work Sans",system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;font-size:17px}
+a{color:inherit}
+.wrap{width:min(1140px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:"Alfa Slab One",Georgia,serif;font-weight:400;line-height:1.08;letter-spacing:.005em}
+h2{font-size:clamp(2rem,4.4vw,3rem);color:var(--red-d)}
+.es{display:block;font-family:"Work Sans",sans-serif;font-weight:600;font-size:.82rem;letter-spacing:.2em;text-transform:uppercase;color:var(--green);margin-bottom:.6rem}
+.lead{color:var(--muted);max-width:62ch;margin-top:.8rem}
+.btn{display:inline-flex;align-items:center;gap:.55rem;padding:.95rem 1.5rem;border-radius:10px;font-weight:600;text-decoration:none;transition:transform .15s,box-shadow .15s;border:2px solid transparent;font-family:inherit;font-size:1rem;cursor:pointer}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:18px;height:18px}
+.btn-gold{background:var(--gold);color:var(--ink);box-shadow:0 5px 0 #b9851a}
+.btn-gold:active{transform:translateY(3px);box-shadow:0 2px 0 #b9851a}
+.btn-line{border-color:#fff;color:#fff}
+.btn-line:hover{background:#fff;color:var(--red-d)}
+.btn-red{background:var(--red);color:#fff;box-shadow:0 5px 0 var(--red-d)}
+/* papel picado */
+.flags{display:flex;width:100%;height:46px;overflow:hidden}
+.flags span{flex:1 0 54px;height:40px;clip-path:polygon(0 0,100% 0,100% 75%,85% 100%,70% 75%,50% 100%,30% 75%,15% 100%,0 75%);margin:0 3px;position:relative}
+.flags span::after{content:"";position:absolute;inset:8px 12px 14px;background:radial-gradient(circle,rgba(255,255,255,.55) 2px,transparent 3px) 0 0/9px 9px}
+.flags span:nth-child(4n+1){background:var(--pink)}.flags span:nth-child(4n+2){background:var(--gold)}.flags span:nth-child(4n+3){background:var(--green)}.flags span:nth-child(4n){background:#2f7fc1}
+/* header */
+.top{background:var(--red);color:#fff;position:sticky;top:0;z-index:20;box-shadow:0 2px 0 var(--red-d)}
+.nav{display:flex;justify-content:space-between;align-items:center;height:68px;gap:1rem}
+.brand{font-family:"Alfa Slab One",serif;font-size:1.45rem;text-decoration:none;color:#fff;line-height:1}
+.brand small{display:block;font-family:"Work Sans";font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;color:#ffd9a8;margin-top:.25rem}
+.nav ul{display:flex;gap:1.6rem;list-style:none;font-weight:600;font-size:.95rem}
+.nav ul a{text-decoration:none;color:#ffe9cc}
+.nav ul a:hover{color:#fff}
+.nav .btn{padding:.6rem 1rem;font-size:.92rem}
+@media(max-width:880px){.nav ul{display:none}}
+@media(max-width:600px){.nav .btn{display:none}}
+/* hero */
+.hero{background:var(--red);color:#fff;position:relative;overflow:hidden;padding:clamp(40px,7vw,80px) 0 clamp(70px,9vw,110px)}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 20%,rgba(255,255,255,.09) 0 180px,transparent 181px),radial-gradient(circle at 92% 85%,rgba(0,0,0,.12) 0 240px,transparent 241px)}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.25fr .75fr;gap:3rem;align-items:center}
+.tag{display:inline-block;background:var(--gold);color:var(--ink);font-weight:600;font-size:.82rem;padding:.35rem .8rem;border-radius:6px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:1.2rem}
+.hero h1{font-size:clamp(2.6rem,6.6vw,4.9rem);color:#fff}
+.hero h1 span{color:var(--gold)}
+.hero p{font-size:1.15rem;color:#ffe3d0;max-width:54ch;margin:1.2rem 0 2rem}
+.cta{display:flex;flex-wrap:wrap;gap:.9rem}
+.seal{background:var(--cream);color:var(--ink);border-radius:50%;aspect-ratio:1;display:grid;place-items:center;text-align:center;padding:2.2rem;border:10px solid var(--gold);box-shadow:0 0 0 6px var(--cream),0 0 0 9px var(--red-d),0 30px 50px -20px rgba(0,0,0,.5);transform:rotate(-6deg);max-width:340px;margin-inline:auto;width:100%}
+.seal b{font-family:"Alfa Slab One";font-size:clamp(1.4rem,2.6vw,1.9rem);color:var(--red);line-height:1.05;display:block}
+.seal .yr{font-family:"Alfa Slab One";font-size:clamp(2.4rem,5vw,3.6rem);color:var(--green);line-height:1;margin:.3rem 0}
+.seal small{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
+@media(max-width:860px){.hero-grid{grid-template-columns:1fr}.seal{max-width:260px}}
+/* strip */
+.strip{background:var(--green);color:#fff}
+.strip ul{display:grid;grid-template-columns:repeat(4,1fr);list-style:none}
+.strip li{padding:1.3rem 1rem;text-align:center;font-weight:600;border-right:1px solid rgba(255,255,255,.15);display:flex;gap:.6rem;align-items:center;justify-content:center;font-size:.98rem}
+.strip li:last-child{border-right:0}
+.strip svg{width:22px;height:22px;color:var(--gold);flex:0 0 22px}
+@media(max-width:860px){.strip ul{grid-template-columns:1fr 1fr}.strip li:nth-child(2){border-right:0}.strip li{border-bottom:1px solid rgba(255,255,255,.15)}}
+section{padding:clamp(60px,9vw,100px) 0}
+/* three pillars */
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.6rem}
+.pillar{background:#fff;border:2px solid var(--line);border-radius:18px;padding:2rem 1.7rem;position:relative;overflow:hidden}
+.pillar::before{content:"";position:absolute;left:0;top:0;right:0;height:8px;background:var(--c,var(--red))}
+.pillar .ic{width:60px;height:60px;border-radius:14px;background:var(--paper);display:grid;place-items:center;margin-bottom:1.1rem;color:var(--c,var(--red))}
+.pillar .ic svg{width:32px;height:32px}
+.pillar h3{font-size:1.55rem;color:var(--ink)}
+.pillar .sub{font-weight:600;color:var(--c,var(--red));font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;margin:.2rem 0 .7rem}
+.pillar p{color:var(--muted)}
+@media(max-width:900px){.pillars{grid-template-columns:1fr}}
+/* menu */
+.menu{background:var(--paper);border-top:2px dashed var(--line);border-bottom:2px dashed var(--line)}
+.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2.4rem}
+.dish{background:#fff;border-radius:16px;padding:1.5rem;border:2px solid var(--line);display:flex;gap:1rem;align-items:flex-start}
+.dish .n{font-family:"Alfa Slab One";color:#fff;background:var(--red);border-radius:10px;min-width:44px;height:44px;display:grid;place-items:center;font-size:1.1rem}
+.dish:nth-child(3n+2) .n{background:var(--green)}.dish:nth-child(3n) .n{background:var(--pink)}
+.dish h3{font-size:1.25rem}
+.dish p{color:var(--muted);font-size:.95rem}
+.ribbon{margin-top:2rem;background:var(--green);color:#fff;border-radius:16px;padding:1.4rem 1.6rem;display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between}
+.ribbon b{font-family:"Alfa Slab One";font-weight:400;font-size:1.35rem;color:var(--gold)}
+@media(max-width:900px){.menu-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.menu-grid{grid-template-columns:1fr}}
+/* story */
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:center}
+.timeline{list-style:none;border-left:4px solid var(--gold);padding-left:1.6rem;display:grid;gap:1.6rem}
+.timeline li{position:relative}
+.timeline li::before{content:"";position:absolute;left:calc(-1.6rem - 12px);top:4px;width:20px;height:20px;border-radius:50%;background:var(--red);border:4px solid var(--cream)}
+.timeline b{font-family:"Alfa Slab One";font-weight:400;color:var(--red);font-size:1.3rem;display:block}
+.timeline p{color:var(--muted)}
+@media(max-width:860px){.story-grid{grid-template-columns:1fr}}
+/* visit */
+.visit{background:#fff}
+.visit-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;margin-top:2.4rem}
+.map{border-radius:18px;overflow:hidden;border:3px solid var(--line);min-height:380px;background:var(--paper)}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+.card{background:var(--cream);border:2px solid var(--line);border-radius:18px;padding:1.8rem}
+.card h3{font-size:1.5rem;margin-bottom:.8rem;color:var(--red-d)}
+.hours{width:100%;border-collapse:collapse}
+.hours td{padding:.6rem 0;border-bottom:1px dashed var(--line)}
+.hours td:last-child{text-align:right;font-weight:600}
+.note{font-size:.85rem;color:var(--muted);margin-top:.8rem}
+@media(max-width:860px){.visit-grid{grid-template-columns:1fr}}
+/* contact */
+.contact{background:var(--red);color:#fff}
+.contact h2{color:#fff}
+.contact .es{color:var(--gold)}
+.contact .lead{color:#ffe0cc}
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:3rem}
+.cinfo{list-style:none;display:grid;gap:1rem;margin-top:1.8rem}
+.cinfo li{display:flex;gap:.9rem;align-items:center}
+.cinfo .ic{width:48px;height:48px;border-radius:12px;background:rgba(255,255,255,.12);display:grid;place-items:center;flex:0 0 48px;color:var(--gold)}
+.cinfo .ic svg{width:22px;height:22px}
+.cinfo small{display:block;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:#ffc9a8}
+.cinfo a{color:#fff;font-weight:600;text-decoration:none;word-break:break-word}
+form{background:var(--cream);color:var(--ink);border-radius:18px;padding:2rem;display:grid;gap:1rem;box-shadow:0 8px 0 var(--red-d)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+label{font-size:.86rem;font-weight:600;color:var(--muted);display:grid;gap:.35rem}
+input,select,textarea{font:inherit;font-weight:400;padding:.8rem .9rem;border:2px solid var(--line);border-radius:10px;background:#fff;width:100%;color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:3px solid var(--gold);outline-offset:0}
+textarea{min-height:110px;resize:vertical}
+@media(max-width:860px){.contact-grid{grid-template-columns:1fr}}
+@media(max-width:520px){.row2{grid-template-columns:1fr}}
+footer{background:var(--ink);color:#d9c6b6;padding:2.6rem 0 2rem;font-size:.93rem}
+.fgrid{display:flex;flex-wrap:wrap;gap:1.2rem;justify-content:space-between;align-items:center}
+footer a{color:var(--gold);text-decoration:none}
+.disclaimer{text-align:center;font-size:.78rem;color:#a08b7a;margin-top:1.8rem;padding-top:1.2rem;border-top:1px solid rgba(255,255,255,.1)}
+.mobile-call{display:none}
+@media(max-width:600px){.mobile-call{display:flex;position:fixed;left:16px;right:16px;bottom:14px;z-index:30;justify-content:center}body{padding-bottom:74px}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":["ButcherShop","GroceryStore"],"name":"Carniceria Aurora","telephone":"+1-303-366-9851","email":"carniceriaurora@gmail.com","foundingDate":"2015","address":{"@type":"PostalAddress","streetAddress":"465 N Havana St","addressLocality":"Aurora","addressRegion":"CO","postalCode":"80010","addressCountry":"US"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"08:00","closes":"18:00"}],"paymentAccepted":"SNAP/EBT","sameAs":["https://www.facebook.com/CarniceriayRestauranteAurora"]}
+</script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap nav">
+    <a class="brand" href="#top">Carniceria Aurora<small>Carnicería · Mercado · Restaurante</small></a>
+    <ul>
+      <li><a href="#tienda">The Market</a></li>
+      <li><a href="#menu">Restaurant</a></li>
+      <li><a href="#historia">Our Story</a></li>
+      <li><a href="#visit">Visit</a></li>
+    </ul>
+    <a class="btn btn-gold" href="tel:+13033669851">(303) 366-9851</a>
+  </div>
+</header>
+<main id="top">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="tag">Now in our new, bigger home on Havana</span>
+      <h1>Fresh meat, Mexican groceries &amp; a <span>hot kitchen</span> — all under one roof.</h1>
+      <p>Carniceria Aurora is a family, woman-owned carnicería and market on North Havana Street. Pick up your meat and groceries, then grab tacos, burritos or a torta from our counter on the way out. <em>¡Bienvenidos!</em></p>
+      <div class="cta">
+        <a class="btn btn-gold" href="tel:+13033669851"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call the shop</a>
+        <a class="btn btn-line" href="#contact">Order a platter / Pedidos</a>
+      </div>
+    </div>
+    <div class="seal" aria-label="Serving Aurora since 2015">
+      <div><small>Serving Aurora since</small><div class="yr">2015</div><b>Aurora, CO</b><small style="display:block;margin-top:.4rem">465 N Havana St</small></div>
+    </div>
+  </div>
+</section>
+<div class="flags" aria-hidden="true" style="background:var(--cream)"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+
+<div class="strip">
+  <ul class="wrap">
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 13c-2-3 0-8 5-8 6 0 9 4 8 8-1 3-4 4-7 4H8l-3 3v-4"/></svg>Carnicería</li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 4h2l2.4 11h11L21 7H6.2"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg>Mexican groceries</li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 14c0-5 4-9 9-9s9 4 9 9H3z"/><path d="M2 18h20"/></svg>In-store restaurant</li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>SNAP / EBT accepted</li>
+  </ul>
+</div>
+
+<section id="tienda">
+  <div class="wrap">
+    <span class="es">La Tienda · The Market</span>
+    <h2>Three reasons to stop by</h2>
+    <p class="lead">Our new store on Havana is nearly three times bigger than our old shop across the street, with more room for the meat counter, the shelves and a kitchen of our own.</p>
+    <div class="pillars">
+      <article class="pillar" style="--c:var(--red)"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15.5 4.5c3 1 4.5 4.6 3 7.8-1.6 3.4-5.6 5.6-9 4.7l-3.7 3.7a1.6 1.6 0 1 1-2.2-2.2l3.7-3.7c-.9-3.4 1.3-7.4 4.7-9 1.2-.6 2.4-.8 3.5-.6z"/></svg></div><h3>Carnicería</h3><div class="sub">Butcher counter</div><p>A traditional Mexican butcher shop. Ask at the counter for the cuts you need for carne asada, guisados and family meals.</p></article>
+      <article class="pillar" style="--c:var(--green)"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 4h2l2.4 11h11L21 7H6.2"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg></div><h3>Mercado</h3><div class="sub">Grocery</div><p>The Mexican pantry staples, produce and everyday groceries you'd expect from your neighborhood market. SNAP/EBT accepted.</p></article>
+      <article class="pillar" style="--c:var(--pink)"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 14c0-5 4-9 9-9s9 4 9 9H3z"/><path d="M2 18h20M12 5V3"/></svg></div><h3>Restaurante</h3><div class="sub">Counter service</div><p>A counter-service kitchen right at the entrance, so you can eat first and shop after, or take a meal home.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="menu">
+  <div class="wrap">
+    <span class="es">Del Restaurante · From the Kitchen</span>
+    <h2>What's cooking at the counter</h2>
+    <p class="lead">Made fresh in the store for breakfast, lunch and dinner. Ask at the counter for today's specials.</p>
+    <div class="menu-grid">
+      <div class="dish"><span class="n">01</span><div><h3>Tacos</h3><p>Street-style tacos, made to order at the counter.</p></div></div>
+      <div class="dish"><span class="n">02</span><div><h3>Burritos</h3><p>Big, filling burritos for a quick lunch or dinner.</p></div></div>
+      <div class="dish"><span class="n">03</span><div><h3>Tortas</h3><p>Mexican sandwiches on soft bread, ready to go.</p></div></div>
+      <div class="dish"><span class="n">04</span><div><h3>Guisados</h3><p>Home-style Mexican stews.</p></div></div>
+      <div class="dish"><span class="n">05</span><div><h3>Desayunos</h3><p>Breakfast plates to start the morning.</p></div></div>
+      <div class="dish"><span class="n">06</span><div><h3>Platters to go</h3><p>Take-home platters for the family or a party.</p></div></div>
+    </div>
+    <div class="ribbon"><div><b>Tamales de puerco</b><br>Pork tamales on weekends — sábados y domingos.</div><a class="btn btn-gold" href="tel:+13033669851">Call to reserve</a></div>
+  </div>
+</section>
+
+<section id="historia">
+  <div class="wrap story-grid">
+    <div>
+      <span class="es">Nuestra Historia · Our Story</span>
+      <h2>Run by sisters, built for the neighborhood</h2>
+      <p class="lead">Carniceria Aurora is owned and run by sisters Maricela and Blanca Carillo. What started as a small carnicería on Havana Street has grown into a full market with a kitchen, still family-run and still serving the same neighbors.</p>
+      <p class="lead">Woman-owned · Hispanic-owned · Se habla español</p>
+    </div>
+    <ol class="timeline">
+      <li><b>2015</b><p>The shop opens on Havana Street. Some longtime customers may remember it as La Consentida.</p></li>
+      <li><b>Years at 354 Havana</b><p>A 3,000-square-foot carnicería becomes a neighborhood go-to for meat and groceries.</p></li>
+      <li><b>2025 — A bigger home</b><p>We moved down the block to 465 N Havana St into a space nearly three times the size, and added our own counter-service restaurant.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="visit" class="visit">
+  <div class="wrap">
+    <span class="es">Visítenos · Visit</span>
+    <h2>Find us on North Havana</h2>
+    <div class="visit-grid">
+      <div class="map"><iframe title="Map to Carniceria Aurora, 465 N Havana St, Aurora, CO" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=465%20N%20Havana%20St%2C%20Aurora%2C%20CO%2080010&amp;output=embed"></iframe></div>
+      <div class="card">
+        <h3>Horario · Hours</h3>
+        <table class="hours">
+          <tr><td>Lunes – Sábado<br><small>Mon – Sat</small></td><td>8:00 am – 8:00 pm</td></tr>
+          <tr><td>Domingo<br><small>Sunday</small></td><td>8:00 am – 6:00 pm</td></tr>
+        </table>
+        <p class="note">Hours can change on some weekdays, so call ahead if you're coming late.</p>
+        <p style="margin-top:1.2rem"><b>465 N Havana St</b><br>Aurora, CO 80010</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <span class="es">Contacto · Contact</span>
+      <h2>Platters, big orders &amp; questions</h2>
+      <p class="lead">Planning a carne asada or a family party? Call the shop or send us a note and we'll get back to you.</p>
+      <ul class="cinfo">
+        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span><div><small>Teléfono</small><a href="tel:+13033669851">(303) 366-9851</a></div></li>
+        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><div><small>Email</small><a href="mailto:carniceriaurora@gmail.com">carniceriaurora@gmail.com</a></div></li>
+        <li><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3c-2.8 0-4 1.8-4 4.3V10H7v4h3v8h4v-8h3l1-4h-4V8.6c0-.4.2-.6.6-.6z"/></svg></span><div><small>Facebook</small><a href="https://www.facebook.com/CarniceriayRestauranteAurora" rel="noopener">Carniceria y Restaurante Aurora</a></div></li>
+      </ul>
+    </div>
+    <form action="mailto:carniceriaurora@gmail.com" method="post" enctype="text/plain">
+      <div class="row2">
+        <label>Nombre / Name<input name="name" autocomplete="name" required></label>
+        <label>Teléfono / Phone<input name="phone" type="tel" autocomplete="tel" required></label>
+      </div>
+      <label>¿Qué necesita? / What do you need?
+        <select name="type"><option>Platter / party order</option><option>Large meat order</option><option>Weekend tamales</option><option>General question</option></select>
+      </label>
+      <label>Fecha / Pick-up date<input name="date" type="date"></label>
+      <label>Detalles / Details<textarea name="msg" placeholder="How many people, what you'd like…"></textarea></label>
+      <button class="btn btn-red" type="submit">Send / Enviar</button>
+    </form>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div><b style="font-family:'Alfa Slab One';font-weight:400;color:#fff;font-size:1.2rem">Carniceria Aurora</b><br>465 N Havana St, Aurora, CO 80010</div>
+      <div><a href="tel:+13033669851">(303) 366-9851</a> · <a href="mailto:carniceriaurora@gmail.com">Email</a> · <a href="https://www.facebook.com/CarniceriayRestauranteAurora" rel="noopener">Facebook</a></div>
+    </div>
+    <p class="disclaimer">Concept preview prepared for Carniceria Aurora by Buildwell Partners. Not the business's official website.</p>
+  </div>
+</footer>
+<a class="btn btn-gold mobile-call" href="tel:+13033669851">Call (303) 366-9851</a>
+</body>
+</html>
