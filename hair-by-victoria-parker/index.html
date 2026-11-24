@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Hair by Victoria | One-on-One Home Salon in Parker, CO</title>
+<meta name="description" content="Hair by Victoria is a private, one-on-one home salon in Parker, Colorado — haircuts for women and kids, color and balayage, keratin smoothing, extensions and braids. Rated 5.0 on Google. Call 303-618-9438.">
+<style>
+@font-face{font-family:"Cormorant Garamond";src:url(fonts/cormorant-garamond-latin-600-normal.woff2) format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Cormorant Garamond";src:url(fonts/cormorant-garamond-latin-600-italic.woff2) format("woff2");font-weight:600;font-style:italic;font-display:swap}
+@font-face{font-family:"Jost";src:url(fonts/jost-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Jost";src:url(fonts/jost-latin-500-normal.woff2) format("woff2");font-weight:500;font-display:swap}
+:root{
+  --cream:#fbf6f1;--blush:#f3e0d8;--rose:#c9897a;--rose-d:#a4614f;--plum:#3d2430;--ink:#2a1c22;--muted:#6d5a60;--line:#e8d6cd;--white:#fff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Jost",system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.65;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:600;line-height:1.1;color:var(--plum)}
+h2{font-size:clamp(2.1rem,4.2vw,3rem);margin-bottom:.6rem}
+.eyebrow{font-size:.78rem;letter-spacing:.22em;text-transform:uppercase;color:var(--rose-d);font-weight:500;margin-bottom:.8rem;display:block}
+.lead{color:var(--muted);max-width:60ch}
+.btn{display:inline-flex;align-items:center;gap:.55rem;padding:.95rem 1.6rem;border-radius:999px;font-weight:500;text-decoration:none;font-size:1rem;transition:transform .2s,background .2s,box-shadow .2s;border:1.5px solid transparent;cursor:pointer;font-family:inherit}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--plum);color:#fff;box-shadow:0 10px 24px -12px rgba(61,36,48,.6)}
+.btn-primary:hover{background:#55333f}
+.btn-ghost{border-color:var(--plum);color:var(--plum);background:transparent}
+.btn-ghost:hover{background:var(--plum);color:#fff}
+.btn svg{width:18px;height:18px}
+/* header */
+header.top{position:sticky;top:0;z-index:20;background:rgba(251,246,241,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px}
+.brand{font-family:"Cormorant Garamond",serif;font-size:1.65rem;font-weight:600;color:var(--plum);text-decoration:none;letter-spacing:.01em}
+.brand em{color:var(--rose-d)}
+.nav ul{display:flex;gap:1.8rem;list-style:none;font-size:.95rem}
+.nav ul a{text-decoration:none;color:var(--muted)}
+.nav ul a:hover{color:var(--plum)}
+.nav .call{padding:.55rem 1.1rem;font-size:.92rem}
+@media(max-width:860px){.nav ul{display:none}}
+/* hero */
+.hero{position:relative;overflow:hidden;padding:clamp(56px,9vw,110px) 0 clamp(64px,9vw,110px)}
+.hero::before{content:"";position:absolute;right:-180px;top:-140px;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#f6d9cd,#efc7b8 55%,transparent 70%);opacity:.85}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:center}
+.hero h1{font-size:clamp(2.9rem,7vw,5.2rem);letter-spacing:-.01em}
+.hero h1 em{color:var(--rose-d);font-style:italic}
+.hero p.lead{font-size:1.15rem;margin:1.3rem 0 2rem}
+.cta{display:flex;flex-wrap:wrap;gap:.8rem}
+.rating-chip{display:inline-flex;align-items:center;gap:.6rem;background:#fff;border:1px solid var(--line);padding:.45rem .9rem;border-radius:999px;font-size:.9rem;margin-bottom:1.4rem;color:var(--muted)}
+.stars{color:#c8933a;letter-spacing:2px}
+.hero-card{position:relative;background:var(--plum);color:#f7e9e3;border-radius:200px 200px 28px 28px;padding:4.5rem 2.2rem 2.4rem;text-align:center;box-shadow:0 30px 60px -30px rgba(61,36,48,.7)}
+.hero-card .mono{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:6.5rem;line-height:1;color:#f0c9bb}
+.hero-card .big{font-family:"Cormorant Garamond",serif;font-size:3.4rem;line-height:1;color:#fff;margin-top:1.4rem}
+.hero-card small{display:block;letter-spacing:.18em;text-transform:uppercase;font-size:.72rem;color:#e6c3b7;margin-top:.4rem}
+.hero-card hr{border:0;border-top:1px solid rgba(255,255,255,.18);margin:1.6rem 0}
+.hero-card p{font-size:.95rem;color:#ead6cf}
+@media(max-width:860px){.hero-grid{grid-template-columns:1fr}.hero-card{max-width:380px;margin-inline:auto;width:100%}}
+/* sections */
+section{padding:clamp(64px,9vw,100px) 0}
+.alt{background:#fff}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2.6rem}
+.svc{background:var(--cream);border:1px solid var(--line);border-radius:22px;padding:1.9rem 1.7rem;transition:transform .25s,box-shadow .25s}
+.svc:hover{transform:translateY(-4px);box-shadow:0 20px 40px -26px rgba(61,36,48,.45)}
+.svc .ic{width:52px;height:52px;border-radius:50%;background:var(--blush);display:grid;place-items:center;margin-bottom:1.1rem;color:var(--rose-d)}
+.svc .ic svg{width:26px;height:26px}
+.svc h3{font-size:1.65rem;margin-bottom:.4rem}
+.svc p{color:var(--muted);font-size:.98rem}
+@media(max-width:900px){.services{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.services{grid-template-columns:1fr}}
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:3.5rem;align-items:center}
+.about-art{aspect-ratio:4/5;border-radius:28px;background:linear-gradient(160deg,#efcfc3 0%,#d9a495 55%,#a4614f 100%);position:relative;overflow:hidden}
+.about-art::after{content:"";position:absolute;inset:18px;border:1.5px solid rgba(255,255,255,.55);border-radius:20px}
+.about-art svg{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:58%;color:rgba(255,255,255,.85)}
+.points{list-style:none;margin-top:1.6rem;display:grid;gap:1rem}
+.points li{display:flex;gap:.9rem;align-items:flex-start}
+.points li b{display:block;color:var(--plum);font-weight:500}
+.points li span.dot{flex:0 0 28px;height:28px;border-radius:50%;background:var(--blush);display:grid;place-items:center;color:var(--rose-d);margin-top:2px}
+.points li span.dot svg{width:15px;height:15px}
+.points li p{color:var(--muted);font-size:.97rem}
+@media(max-width:860px){.about-grid{grid-template-columns:1fr}.about-art{max-width:420px;aspect-ratio:5/4}}
+/* rating band */
+.band{background:var(--plum);color:#f3e3dd;text-align:center;padding:clamp(56px,8vw,84px) 0}
+.band .num{font-family:"Cormorant Garamond",serif;font-size:clamp(4rem,10vw,6.5rem);line-height:1;color:#fff}
+.band .stars{font-size:1.5rem;color:#e7b56a}
+.band p{max-width:58ch;margin:1rem auto 0;color:#e2cbc3}
+.band .src{font-size:.82rem;letter-spacing:.14em;text-transform:uppercase;color:#d1a99b;margin-top:1.2rem}
+/* visit */
+.visit-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;margin-top:2.4rem}
+.map{border-radius:22px;overflow:hidden;border:1px solid var(--line);min-height:360px;background:var(--blush)}
+.map iframe{width:100%;height:100%;min-height:360px;border:0;display:block}
+.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:1.8rem}
+.card h3{font-size:1.6rem;margin-bottom:.8rem}
+.hours{width:100%;border-collapse:collapse;font-size:.98rem}
+.hours td{padding:.55rem 0;border-bottom:1px dashed var(--line)}
+.hours td:last-child{text-align:right;color:var(--muted)}
+.note{font-size:.86rem;color:var(--muted);margin-top:.9rem}
+@media(max-width:860px){.visit-grid{grid-template-columns:1fr}}
+/* contact */
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:3rem}
+.cinfo{list-style:none;display:grid;gap:1.1rem;margin-top:1.6rem}
+.cinfo li{display:flex;gap:.9rem;align-items:center}
+.cinfo .ic{width:46px;height:46px;border-radius:14px;background:var(--blush);display:grid;place-items:center;color:var(--rose-d);flex:0 0 46px}
+.cinfo .ic svg{width:21px;height:21px}
+.cinfo small{display:block;color:var(--muted);font-size:.8rem;letter-spacing:.08em;text-transform:uppercase}
+.cinfo a{text-decoration:none;font-weight:500;color:var(--plum)}
+form{background:var(--cream);border:1px solid var(--line);border-radius:24px;padding:2rem;display:grid;gap:1rem}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+label{font-size:.85rem;color:var(--muted);display:grid;gap:.35rem}
+input,select,textarea{font:inherit;padding:.8rem .95rem;border:1px solid #dcc6bc;border-radius:12px;background:#fff;color:var(--ink);width:100%}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--rose);outline-offset:1px}
+textarea{min-height:110px;resize:vertical}
+@media(max-width:860px){.contact-grid{grid-template-columns:1fr}}
+@media(max-width:520px){.row2{grid-template-columns:1fr}}
+footer{background:var(--ink);color:#cdb8bf;padding:3rem 0 2rem;font-size:.93rem}
+.fgrid{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1.5rem;align-items:center}
+footer .brand{color:#fff}
+footer a{color:#f0c9bb;text-decoration:none}
+.disclaimer{margin-top:2rem;padding-top:1.2rem;border-top:1px solid rgba(255,255,255,.1);font-size:.78rem;color:#9a8790;text-align:center}
+.mobile-call{display:none}
+@media(max-width:600px){.mobile-call{display:flex;position:fixed;left:16px;right:16px;bottom:14px;z-index:30;justify-content:center}body{padding-bottom:70px}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"HairSalon","name":"Hair by Victoria","telephone":"+1-303-618-9438","address":{"@type":"PostalAddress","streetAddress":"15965 Savory Cir","addressLocality":"Parker","addressRegion":"CO","postalCode":"80134","addressCountry":"US"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday"],"opens":"09:00","closes":"19:00"}],"aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"178"},"areaServed":"Parker, CO"}
+</script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap nav">
+    <a class="brand" href="#top">Hair <em>by</em> Victoria</a>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">The Studio</a></li>
+      <li><a href="#visit">Hours &amp; Location</a></li>
+      <li><a href="#contact">Book</a></li>
+    </ul>
+    <a class="btn btn-primary call" href="tel:+13036189438">Call 303-618-9438</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="rating-chip"><span class="stars" aria-hidden="true">★★★★★</span> 5.0 on Google · 178 reviews</span>
+      <h1>Beautiful hair, <em>one guest</em> at a time.</h1>
+      <p class="lead">A private, one-on-one home salon in Parker, Colorado — relaxed appointments, honest prices and cuts the whole family can look forward to, from kids' trims to color and keratin smoothing.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="tel:+13036189438"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call or text</a>
+        <a class="btn btn-ghost" href="#contact">Book an appointment</a>
+      </div>
+    </div>
+    <aside class="hero-card" aria-label="Rating summary">
+      <div class="mono" aria-hidden="true">V</div>
+      <div class="big">5.0</div>
+      <small>Google rating · 178 reviews</small>
+      <hr>
+      <p>Private home studio · Parker, CO<br>Open 7 days by appointment</p>
+    </aside>
+  </div>
+</section>
+
+<section id="services" class="alt">
+  <div class="wrap">
+    <span class="eyebrow">Services</span>
+    <h2>Everything your hair needs, in one quiet chair</h2>
+    <p class="lead">From a quick kids' trim to a full color appointment. Call or text to ask about pricing and availability for your service.</p>
+    <div class="services">
+      <article class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/></svg></div><h3>Women's Cuts</h3><p>Shaping, trims and fresh new looks, tailored to your hair texture and routine.</p></article>
+      <article class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 3l2.5 5 5.5.8-4 3.9.9 5.5L12 15.6 7.1 18.2 8 12.7 4 8.8 9.5 8z"/></svg></div><h3>Kids' Haircuts</h3><p>Patient, kid-friendly cuts in a calm home setting — a favorite with Parker families.</p></article>
+      <article class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 2.7c3.5 4.3 6 7.6 6 10.8a6 6 0 0 1-12 0c0-3.2 2.5-6.5 6-10.8z"/></svg></div><h3>Color &amp; Balayage</h3><p>Hand-painted balayage and color for natural, low-maintenance dimension.</p></article>
+      <article class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 7c4-3 12-3 16 0M4 12c4-3 12-3 16 0M4 17c4-3 12-3 16 0"/></svg></div><h3>Keratin Smoothing</h3><p>Keratin treatments that tame frizz and leave hair smooth and easier to style.</p></article>
+      <article class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M8 3c0 6 8 6 8 12s-8 6-8 6M16 3c0 6-8 6-8 12"/></svg></div><h3>Braiding</h3><p>Braids and styled looks for everyday, school days and special occasions.</p></article>
+      <article class="svc"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M6 3v18M10 3v18M14 3v18M18 3v18"/></svg></div><h3>Extensions &amp; Curly Cuts</h3><p>Hair extensions for length and volume, plus cuts that respect natural curl.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="about-art" aria-hidden="true">
+      <svg viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M50 14c-17 0-28 13-28 30 0 12 5 20 5 30M50 14c17 0 28 13 28 30 0 12-5 20-5 30"/><path d="M36 46c4-9 24-9 28 0"/><circle cx="50" cy="52" r="14"/><path d="M38 88c3-9 21-9 24 0"/></svg>
+    </div>
+    <div>
+      <span class="eyebrow">The Studio</span>
+      <h2>A salon visit that feels like a breather</h2>
+      <p class="lead">Hair by Victoria is Victoria's own private salon, set up in her Parker home. There's no crowded floor, no waiting room and no rush — just one guest in the chair and her full attention.</p>
+      <ul class="points">
+        <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 12 5 5L20 7"/></svg></span><p><b>One-on-one, start to finish</b>Every appointment is just you and Victoria.</p></li>
+        <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 12 5 5L20 7"/></svg></span><p><b>Cozy, clean and relaxed</b>The comfortable space is something guests mention again and again.</p></li>
+        <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 12 5 5L20 7"/></svg></span><p><b>Affordable, friendly pricing</b>Salon-quality results without the big-salon price tag.</p></li>
+        <li><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 12 5 5L20 7"/></svg></span><p><b>Great with kids</b>Ranked among the kid-friendly hair salons in Parker on Atly.</p></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="band" aria-label="Reviews">
+  <div class="wrap">
+    <div class="num">5.0</div>
+    <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+    <p>Across 178 Google reviews, guests keep coming back to the same things: a cozy, clean space, prices that feel fair, and especially great haircuts for kids.</p>
+    <div class="src">Google rating · as listed on Birdeye</div>
+  </div>
+</section>
+
+<section id="visit" class="alt">
+  <div class="wrap">
+    <span class="eyebrow">Hours &amp; Location</span>
+    <h2>Find the studio</h2>
+    <p class="lead">Private home salon in Parker, CO 80134. All visits are by appointment, so please call or text before you come by.</p>
+    <div class="visit-grid">
+      <div class="map"><iframe title="Map to Hair by Victoria, 15965 Savory Cir, Parker, CO" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=15965%20Savory%20Cir%2C%20Parker%2C%20CO%2080134&amp;output=embed"></iframe></div>
+      <div class="card">
+        <h3>Appointment hours</h3>
+        <table class="hours">
+          <tr><td>Monday – Friday</td><td>9:00 am – 8:00 pm</td></tr>
+          <tr><td>Saturday</td><td>9:00 am – 7:00 pm</td></tr>
+          <tr><td>Sunday</td><td>9:00 am – 7:00 pm</td></tr>
+        </table>
+        <p class="note">By appointment only. Hours as listed on Fresha. Please call ahead to confirm.</p>
+        <p style="margin-top:1.2rem"><b>15965 Savory Cir</b><br>Parker, CO 80134</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <span class="eyebrow">Book a visit</span>
+      <h2>Let's get you on the calendar</h2>
+      <p class="lead">The quickest way to book is a call or text. You can also send a request here and Victoria will get back to you.</p>
+      <ul class="cinfo">
+        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span><div><small>Call or text</small><a href="tel:+13036189438">303-618-9438</a></div></li>
+        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span><div><small>Studio</small>15965 Savory Cir, Parker, CO</div></li>
+        <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></span><div><small>Online booking</small><a href="https://www.fresha.com/lvp/hair-by-victoria-savory-circle-parker-15JxLz" rel="noopener">Book on Fresha</a></div></li>
+      </ul>
+    </div>
+    <form onsubmit="event.preventDefault();this.querySelector('button').textContent='Thanks! (demo form)';">
+      <div class="row2">
+        <label>Name<input name="name" autocomplete="name" required></label>
+        <label>Phone<input name="phone" type="tel" autocomplete="tel" required></label>
+      </div>
+      <label>Service
+        <select name="service"><option>Women's cut</option><option>Kids' haircut</option><option>Color / balayage</option><option>Keratin treatment</option><option>Braiding</option><option>Extensions</option><option>Not sure yet</option></select>
+      </label>
+      <label>Preferred days &amp; times<input name="when" placeholder="e.g. weekday evenings"></label>
+      <label>Anything else?<textarea name="msg" placeholder="Hair length, goals, photos you love…"></textarea></label>
+      <button class="btn btn-primary" type="submit">Request appointment</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <a class="brand" href="#top">Hair by Victoria</a>
+      <div>15965 Savory Cir, Parker, CO 80134 · <a href="tel:+13036189438">303-618-9438</a></div>
+    </div>
+    <p class="disclaimer">Concept preview prepared for Hair by Victoria by Buildwell Partners. Not the business's official website.</p>
+  </div>
+</footer>
+<a class="btn btn-primary mobile-call" href="tel:+13036189438">Call or text 303-618-9438</a>
+</body>
+</html>
