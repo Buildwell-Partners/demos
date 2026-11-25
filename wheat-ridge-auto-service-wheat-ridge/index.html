@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Wheat Ridge Auto Service | Family-Owned Auto Repair Since 1980 · Wheat Ridge, CO</title>
+<meta name="description" content="Wheat Ridge Auto Service: family-owned, word-of-mouth auto repair at 44th &amp; Teller since 1980. Owner Gary Bryan. 9205 W 44th Ave, Wheat Ridge, CO · (303) 421-2447 · Mon–Thu 8–5.">
+<meta name="theme-color" content="#13263d">
+<style>
+@font-face{font-family:"Oswald";src:url(fonts/oswald-latin-500-normal.woff2) format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:"Oswald";src:url(fonts/oswald-latin-600-normal.woff2) format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"Source Sans 3";src:url(fonts/source-sans-3-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Source Sans 3";src:url(fonts/source-sans-3-latin-600-normal.woff2) format("woff2");font-weight:600;font-display:swap}
+:root{--navy:#13263d;--navy-2:#1c3553;--red:#c4342b;--red-d:#a32a22;--amber:#f2b134;--cream:#f5f0e6;--paper:#fbf9f4;--ink:#18202b;--muted:#5a6370;--line:#e2dace}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Source Sans 3",system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65;font-size:18px}
+a{color:inherit}
+svg{display:block}
+.wrap{width:min(1140px,100% - 32px);margin-inline:auto}
+h1,h2,h3{font-family:"Oswald",Impact,sans-serif;font-weight:600;line-height:1.05;text-transform:uppercase;letter-spacing:.01em;color:var(--navy)}
+h2{font-size:clamp(2.2rem,5vw,3.4rem)}
+.tag{display:inline-block;font-family:"Oswald";font-weight:500;letter-spacing:.18em;text-transform:uppercase;font-size:.85rem;color:var(--red);margin-bottom:.8rem}
+.lead{color:var(--muted);max-width:62ch;margin-top:1rem;font-size:1.08rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;padding:1rem 1.6rem;border-radius:6px;font-family:"Oswald";font-weight:500;text-transform:uppercase;letter-spacing:.08em;text-decoration:none;font-size:1.02rem;border:2px solid transparent;transition:transform .15s,background .2s;cursor:pointer}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:20px;height:20px}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-d)}
+.btn-line{border-color:rgba(255,255,255,.7);color:#fff}
+.btn-line:hover{background:#fff;color:var(--navy)}
+.btn-navy{background:var(--navy);color:#fff}
+.stripe{height:10px;background:repeating-linear-gradient(90deg,var(--red) 0 60px,var(--paper) 60px 66px,var(--navy) 66px 126px,var(--paper) 126px 132px)}
+.top{position:sticky;top:0;z-index:20;background:var(--navy);color:#fff;box-shadow:0 2px 0 var(--red)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:70px;gap:1rem}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;color:#fff}
+.brand .mark{width:42px;height:42px;border-radius:50%;background:var(--red);display:grid;place-items:center;border:2px solid var(--amber);flex:0 0 42px}
+.brand .mark svg{width:22px;height:22px;color:#fff}
+.brand b{font-family:"Oswald";font-weight:600;font-size:1.25rem;text-transform:uppercase;letter-spacing:.04em;line-height:1}
+.brand small{display:block;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--amber);margin-top:.2rem}
+.nav ul{display:flex;gap:1.8rem;list-style:none;font-family:"Oswald";font-weight:500;text-transform:uppercase;letter-spacing:.08em;font-size:.95rem}
+.nav ul a{text-decoration:none;color:#c9d4e2}
+.nav ul a:hover{color:#fff}
+.nav .btn{padding:.6rem 1rem;font-size:.95rem}
+@media(max-width:900px){.nav ul{display:none}}
+@media(max-width:560px){.nav .btn{display:none}.brand b{font-size:1.1rem}}
+.hero{background:radial-gradient(90% 120% at 85% 10%,#24456a 0%,transparent 60%),linear-gradient(160deg,var(--navy) 0%,#0d1b2c 100%);color:#fff;padding:clamp(56px,9vw,104px) 0;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(135deg,rgba(255,255,255,.025) 0 2px,transparent 2px 14px)}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.25fr .75fr;gap:3rem;align-items:center}
+.hero h1{color:#fff;font-size:clamp(2.8rem,7vw,5.2rem)}
+.hero h1 span{color:var(--amber)}
+.hero p{color:#cdd8e6;font-size:1.2rem;max-width:50ch;margin:1.3rem 0 2rem}
+.cta{display:flex;flex-wrap:wrap;gap:.9rem}
+.sign{justify-self:center;width:min(320px,100%);text-align:center}
+.sign .disc{aspect-ratio:1;border-radius:50%;background:var(--cream);border:10px solid var(--red);box-shadow:0 0 0 6px var(--navy),0 0 0 9px var(--amber),0 30px 50px -20px rgba(0,0,0,.6);display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--navy);padding:1.5rem}
+.sign .disc small{font-family:"Oswald";letter-spacing:.3em;text-transform:uppercase;font-size:.85rem;color:var(--red)}
+.sign .disc b{font-family:"Oswald";font-weight:600;font-size:4.6rem;line-height:1}
+.sign .disc span{font-family:"Oswald";text-transform:uppercase;letter-spacing:.12em;font-size:.95rem}
+.sign .post{width:22px;height:70px;margin:0 auto;background:linear-gradient(90deg,#6b7787,#9aa6b5,#6b7787)}
+@media(max-width:820px){.hero-grid{grid-template-columns:1fr}.sign{width:240px}.sign .post{height:30px}}
+.strip{background:var(--amber);color:var(--navy)}
+.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;padding:1.2rem 0}
+.strip div{display:flex;align-items:center;gap:.6rem;font-family:"Oswald";font-weight:500;text-transform:uppercase;letter-spacing:.06em;font-size:1rem}
+.strip svg{width:24px;height:24px;flex:0 0 24px}
+@media(max-width:820px){.strip .wrap{grid-template-columns:1fr 1fr}}
+@media(max-width:420px){.strip .wrap{grid-template-columns:1fr}}
+section{padding:clamp(64px,9vw,104px) 0}
+.cream{background:var(--cream)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2.6rem}
+.svc{background:#fff;border:1px solid var(--line);border-top:5px solid var(--red);border-radius:8px;padding:1.8rem}
+.svc .ic{width:54px;height:54px;border-radius:8px;background:var(--navy);color:var(--amber);display:grid;place-items:center;margin-bottom:1rem}
+.svc .ic svg{width:28px;height:28px}
+.svc h3{font-size:1.45rem;margin-bottom:.5rem}
+.svc p{color:var(--muted);font-size:1rem}
+.callout{margin-top:2rem;background:var(--navy);color:#dbe4ef;border-radius:8px;padding:1.4rem 1.6rem;display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between}
+.callout b{color:#fff;font-family:"Oswald";text-transform:uppercase;letter-spacing:.04em;font-size:1.2rem;font-weight:500}
+@media(max-width:900px){.svc-grid{grid-template-columns:1fr}}
+.story{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,5rem);align-items:center}
+.timeline{position:relative;padding-left:2rem;display:grid;gap:1.8rem}
+.timeline::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:3px;background:repeating-linear-gradient(var(--navy) 0 10px,transparent 10px 16px)}
+.tl{position:relative}
+.tl::before{content:"";position:absolute;left:-2rem;top:.35rem;width:17px;height:17px;border-radius:50%;background:var(--red);border:3px solid var(--cream)}
+.tl b{font-family:"Oswald";font-size:1.7rem;color:var(--red);display:block;line-height:1}
+.tl h3{font-size:1.2rem;margin:.3rem 0 .2rem}
+.tl p{color:var(--muted);font-size:1rem}
+.press{display:inline-flex;gap:.5rem;align-items:center;margin-top:1.6rem;font-weight:600;color:var(--red-d)}
+.press svg{width:18px;height:18px}
+@media(max-width:860px){.story{grid-template-columns:1fr}}
+.visit-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:2rem;margin-top:2.6rem}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:2rem}
+.hours{list-style:none;margin-top:.6rem}
+.hours li{display:flex;justify-content:space-between;padding:.6rem 0;border-bottom:1px solid var(--line)}
+.hours li:last-child{border:0}
+.hours .off{color:var(--muted)}
+.info{display:grid;gap:.8rem;margin-top:1.4rem}
+.info a{display:flex;gap:.7rem;text-decoration:none;align-items:flex-start}
+.info svg{width:22px;height:22px;color:var(--red);flex:0 0 22px;margin-top:.15rem}
+.map{border-radius:8px;overflow:hidden;border:1px solid var(--line);min-height:400px;background:#e7e1d4}
+.map iframe{width:100%;height:100%;min-height:400px;border:0;display:block}
+@media(max-width:860px){.visit-grid{grid-template-columns:1fr}}
+.contact{background:var(--navy);color:#dbe4ef}
+.contact h2{color:#fff}
+.contact .tag{color:var(--amber)}
+.contact .lead{color:#b9c6d6}
+.c-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,6vw,4.5rem);align-items:start}
+.bigphone{display:block;font-family:"Oswald";font-weight:600;font-size:clamp(2.2rem,6vw,3.4rem);color:var(--amber);text-decoration:none;margin:1.4rem 0 .4rem;letter-spacing:.02em}
+form{background:#fff;color:var(--ink);border-radius:8px;padding:1.8rem;display:grid;gap:1rem}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+label{font-size:.88rem;font-weight:600;color:var(--navy);display:grid;gap:.35rem}
+input,select,textarea{font:inherit;font-size:1rem;padding:.8rem .9rem;border-radius:6px;border:1px solid #cfd5dd;width:100%;background:#fff;color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--red);outline-offset:1px}
+textarea{min-height:110px;resize:vertical}
+.fm{font-size:.95rem;color:var(--red-d);min-height:1.2em}
+@media(max-width:860px){.c-grid{grid-template-columns:1fr}}
+@media(max-width:480px){.row2{grid-template-columns:1fr}}
+footer{background:#0b1726;color:#93a3b8;padding:2.4rem 0 1.6rem;font-size:.95rem}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;align-items:center}
+.disclaimer{margin-top:1.6rem;padding-top:1rem;border-top:1px solid rgba(255,255,255,.1);font-size:.8rem;text-align:center;color:#7f8ea3}
+.mbar{display:none}
+@media(max-width:600px){.mbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:30}.mbar a{text-align:center;padding:1rem;color:#fff;text-decoration:none;font-family:"Oswald";text-transform:uppercase;letter-spacing:.08em;background:var(--red)}.mbar a+a{background:var(--navy)}body{padding-bottom:56px}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"AutoRepair","name":"Wheat Ridge Auto Service","telephone":"+1-303-421-2447","foundingDate":"1980","founder":{"@type":"Person","name":"Gary Bryan"},"address":{"@type":"PostalAddress","streetAddress":"9205 W 44th Ave","addressLocality":"Wheat Ridge","addressRegion":"CO","postalCode":"80033","addressCountry":"US"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday"],"opens":"08:00","closes":"17:00"}]}
+</script>
+</head>
+<body>
+<header class="top">
+ <div class="wrap nav">
+  <a class="brand" href="#top"><span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.2L3 17.8 6.2 21l6.3-6.3a4 4 0 0 0 5.2-5.4l-2.6 2.6-2.5-.6-.6-2.5z"/></svg></span><span><b>Wheat Ridge Auto Service</b><small>Since 1980 · 44th &amp; Teller</small></span></a>
+  <nav aria-label="Main"><ul><li><a href="#services">Services</a></li><li><a href="#story">Our Story</a></li><li><a href="#visit">Hours</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+  <a class="btn btn-red" href="tel:+13034212447">(303) 421-2447</a>
+ </div>
+</header>
+
+<main id="top">
+<section class="hero">
+ <div class="wrap hero-grid">
+  <div>
+   <span class="tag" style="color:var(--amber)">Family-owned auto repair · Wheat Ridge, CO</span>
+   <h1>Honest car repair <span>your neighbors</span> have trusted since 1980.</h1>
+   <p>Gary Bryan has kept Wheat Ridge cars running from the same corner of 44th Avenue for more than four decades — no gimmicks, no big ad budget, just straight answers and work done right.</p>
+   <div class="cta">
+    <a class="btn btn-red" href="tel:+13034212447"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call (303) 421-2447</a>
+    <a class="btn btn-line" href="#contact">Request an appointment</a>
+   </div>
+  </div>
+  <div class="sign" aria-hidden="true">
+   <div class="disc"><small>Serving Wheat Ridge</small><b>45+</b><span>Years at 44th &amp; Teller</span></div>
+   <div class="post"></div>
+  </div>
+ </div>
+</section>
+<div class="strip"><div class="wrap">
+ <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>Family-owned &amp; local</div>
+ <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Open since 1980</div>
+ <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg>Built on word of mouth</div>
+ <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>9205 W 44th Ave</div>
+</div></div>
+<div class="stripe" aria-hidden="true"></div>
+
+<section id="services" class="cream">
+ <div class="wrap">
+  <span class="tag">What we do</span>
+  <h2>Repair &amp; maintenance, the old-school way</h2>
+  <p class="lead">An independent neighborhood shop for the everyday work that keeps your car safe and on the road. Not sure if your job is a fit? Just call — Gary will tell you straight.</p>
+  <div class="svc-grid">
+   <article class="svc">
+    <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.2L3 17.8 6.2 21l6.3-6.3a4 4 0 0 0 5.2-5.4l-2.6 2.6-2.5-.6-.6-2.5z"/></svg></div>
+    <h3>General auto repair</h3>
+    <p>When something sounds, feels or smells wrong, bring it in. You'll get an honest look and a plain-English explanation before any work begins.</p>
+   </article>
+   <article class="svc">
+    <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2v6M12 22v-4M4.9 4.9l4.2 4.2M14.9 14.9l4.2 4.2M2 12h6M22 12h-4M4.9 19.1l4.2-4.2M14.9 9.1l4.2-4.2"/></svg></div>
+    <h3>Seasonal check-ups</h3>
+    <p>Colorado swings from summer heat to winter cold. Gary's car-care tips on beating the heat and winterizing your ride have run in the Neighborhood Gazette.</p>
+   </article>
+   <article class="svc">
+    <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+    <h3>Routine maintenance</h3>
+    <p>Keep up with the basics so small problems don't become big bills — the kind of steady care that has kept local families coming back for decades.</p>
+   </article>
+  </div>
+  <div class="callout"><b>Open Monday – Thursday, 8 am – 5 pm.</b><a class="btn btn-red" href="tel:+13034212447">Call to book</a></div>
+ </div>
+</section>
+
+<section id="story">
+ <div class="wrap story">
+  <div>
+   <span class="tag">Our story</span>
+   <h2>A "For Rent" sign, an old gas station, and 45 years</h2>
+   <p class="lead">In 1980 Gary Bryan spotted a "For Rent" sign on an old gas station at 44th and Teller and signed the lease. More than four decades later the shop is still family-run — Gary works alongside his wife, Mimi — and it has never needed to advertise. Customers simply tell their friends.</p>
+   <p class="lead">In July 2025 Wheat Ridge Auto Service marked 45 years in business, and the local paper stopped by to celebrate.</p>
+   <a class="press" href="https://ngazette.com/wheat-ridge-auto-service-marks-45-years-provides-summer-heat-tips/">Read the Neighborhood Gazette feature <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+  </div>
+  <div class="timeline">
+   <div class="tl"><b>1980</b><h3>The lease is signed</h3><p>Gary takes over the old station at 44th &amp; Teller in Wheat Ridge.</p></div>
+   <div class="tl"><b>Decades</b><h3>Word of mouth</h3><p>No advertising — the shop grows one satisfied neighbor at a time.</p></div>
+   <div class="tl"><b>2025</b><h3>45 years</h3><p>Featured in the Neighborhood Gazette for the shop's 45th anniversary.</p></div>
+   <div class="tl"><b>Today</b><h3>Still family-run</h3><p>Same corner, same straight-shooting service.</p></div>
+  </div>
+ </div>
+</section>
+
+<section id="visit" class="cream">
+ <div class="wrap">
+  <span class="tag">Hours &amp; location</span>
+  <h2>Find the shop</h2>
+  <div class="visit-grid">
+   <div class="card">
+    <h3 style="font-size:1.5rem">Shop hours</h3>
+    <ul class="hours">
+     <li><span>Monday</span><span>8:00 am – 5:00 pm</span></li>
+     <li><span>Tuesday</span><span>8:00 am – 5:00 pm</span></li>
+     <li><span>Wednesday</span><span>8:00 am – 5:00 pm</span></li>
+     <li><span>Thursday</span><span>8:00 am – 5:00 pm</span></li>
+     <li class="off"><span>Friday – Sunday</span><span>Closed</span></li>
+    </ul>
+    <div class="info">
+     <a href="https://www.google.com/maps?q=9205+W+44th+Ave,+Wheat+Ridge,+CO+80033"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><span>9205 W 44th Ave<br>Wheat Ridge, CO 80033 <small style="color:var(--muted)">(44th &amp; Teller)</small></span></a>
+     <a href="tel:+13034212447"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span>(303) 421-2447</span></a>
+    </div>
+   </div>
+   <div class="map"><iframe title="Map to Wheat Ridge Auto Service" loading="lazy" src="https://www.google.com/maps?q=9205%20W%2044th%20Ave%2C%20Wheat%20Ridge%2C%20CO%2080033&amp;output=embed"></iframe></div>
+  </div>
+ </div>
+</section>
+
+<section id="contact" class="contact">
+ <div class="wrap c-grid">
+  <div>
+   <span class="tag">Get in touch</span>
+   <h2>Car trouble? Give Gary a call.</h2>
+   <p class="lead">The fastest way to get on the schedule is a phone call during shop hours. Or leave your details and what's going on with your car, and the shop will get back to you.</p>
+   <a class="bigphone" href="tel:+13034212447">(303) 421-2447</a>
+   <p style="color:#b9c6d6">Mon – Thu · 8 am – 5 pm</p>
+  </div>
+  <form id="f" novalidate>
+   <div class="row2">
+    <label>Name<input name="name" autocomplete="name"></label>
+    <label>Phone<input name="phone" type="tel" autocomplete="tel"></label>
+   </div>
+   <div class="row2">
+    <label>Year / make / model<input name="car" placeholder="e.g. 2014 Honda Accord"></label>
+    <label>Preferred day<select name="day"><option>Monday</option><option>Tuesday</option><option>Wednesday</option><option>Thursday</option></select></label>
+   </div>
+   <label>What's going on?<textarea name="msg" placeholder="Noises, warning lights, maintenance due…"></textarea></label>
+   <button class="btn btn-red" type="submit">Send request</button>
+   <p class="fm" id="fm" role="status"></p>
+  </form>
+ </div>
+</section>
+</main>
+<footer>
+ <div class="wrap">
+  <div class="foot"><b style="font-family:Oswald;text-transform:uppercase;color:#fff;letter-spacing:.05em">Wheat Ridge Auto Service</b><span>9205 W 44th Ave, Wheat Ridge, CO 80033 · <a href="tel:+13034212447">(303) 421-2447</a></span></div>
+  <p class="disclaimer">Concept preview prepared for Wheat Ridge Auto Service by Buildwell Partners. Not the business's official website.</p>
+ </div>
+</footer>
+<div class="mbar"><a href="tel:+13034212447">Call now</a><a href="#visit">Directions</a></div>
+<script>document.getElementById('f').addEventListener('submit',function(e){e.preventDefault();document.getElementById('fm').textContent='Thanks! This is a preview form — on the live site your request goes straight to the shop. For now, please call (303) 421-2447.';});</script>
+</body>
+</html>
