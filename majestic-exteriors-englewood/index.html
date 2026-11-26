@@ -252,12 +252,6 @@
    "description": "Owner of Majestic Exteriors with more than 20 years of roofing experience, starting on crews and working up to running the company."
   },
   {
-   "@type": "DefinedTerm",
-   "@id": "https://majesticexteriors.net/#class-4-roof",
-   "name": "Class 4 impact-resistant roof",
-   "description": "Roofing that earns the highest rating (Class 4) under the UL 2218 impact test, in which steel balls up to 2 inches in diameter are dropped on the product without it cracking."
-  },
-  {
    "@type": "FAQPage",
    "@id": "https://majesticexteriors.net/#faq",
    "mainEntity": [
@@ -1013,7 +1007,7 @@ body.hide-ph .portrait>.ph{background:var(--tint)}
 <h2>Red flags on the current site</h2>
 <div class="table-wrap"><table class="spec flags"><thead><tr><th>Issue</th><th>Why it matters</th><th>Fixed here by</th></tr></thead><tbody>
 <tr><td><b class="sev hi">Every page says noindex, nofollow</b></td><td>The site tells Google not to list it. It cannot rank for anything, including "Majestic Exteriors".</td><td>Indexable pages, robots.txt that allows search and AI crawlers, XML sitemap</td></tr>
-<tr><td><b class="sev hi">No sitemap, no structured data, no meta descriptions</b></td><td>Search engines and AI assistants get no machine-readable facts about the business.</td><td>JSON-LD graph: RoofingContractor, Person, Service, FAQPage, HowTo, Review, DefinedTerm</td></tr>
+<tr><td><b class="sev hi">No sitemap, no structured data, no meta descriptions</b></td><td>Search engines and AI assistants get no machine-readable facts about the business.</td><td>JSON-LD graph: RoofingContractor, Person, Service, FAQPage, HowTo, Review</td></tr>
 <tr><td><b class="sev hi">No real hail or insurance content</b></td><td>Hail claims are the core of Denver roofing demand, and the site never mentions them.</td><td>Hail page, claim steps, hail-size tool, Colorado rights section</td></tr>
 <tr><td><b class="sev md">Reviews are from 2018, and one is duplicated</b></td><td>The homepage shows Brian Stranges with Mary Brohmer's text. Old reviews read as a slow business.</td><td>Full reviews; placeholder for a live Google feed and review requests</td></tr>
 <tr><td><b class="sev md">Only one service-area mention, and it says "metroplex"</b></td><td>"Metroplex" is a Dallas term. There are no city pages, so the site cannot rank outside Englewood.</td><td>18 city links, an example Littleton page</td></tr>
@@ -1021,13 +1015,18 @@ body.hide-ph .portrait>.ph{background:var(--tint)}
 <tr><td><b class="sev md">Zoom is disabled, images lack alt text, two H1s</b></td><td>Accessibility failures (WCAG 1.4.4) and weaker SEO.</td><td>Zoom allowed, one H1 per page, labeled controls</td></tr>
 <tr><td><b class="sev lo">The only email is a named employee's</b></td><td>A buyer sees key-person risk. Leads go cold when one inbox is busy.</td><td>Recommend estimates@ routed to a CRM</td></tr>
 </tbody></table></div>
-<h2>Built in, from the Buildwell playbook</h2>
+<h2>Built in, matching buildwell.partners</h2>
+<p>Each item below is something <a href="https://buildwell.partners/" target="_blank" rel="noopener">buildwell.partners</a> does on its own site, applied to Majestic.</p>
 <ul class="checks">
-<li><b>Linked JSON-LD graph</b> with stable @id values, the same pattern as buildwellpartners.com.</li>
-<li><b>Answer-first blocks</b> ("Quick answer") at the top of each page, written to be quoted by Google AI Overviews, ChatGPT and Perplexity.</li>
-<li><b>FAQ and HowTo content</b> that matches the schema word for word.</li>
-<li><b>llms.txt, robots.txt and sitemap.xml</b> published with this prototype: <a href="llms.txt" target="_blank" rel="noopener">llms.txt</a> · <a href="robots.txt" target="_blank" rel="noopener">robots.txt</a> · <a href="sitemap.xml" target="_blank" rel="noopener">sitemap.xml</a></li>
-<li><b>A DefinedTerm</b> (Class 4 roof) so AI answers can cite Majestic as the source of the definition.</li>
+<li><b>One linked schema graph.</b> The business, website and owner are described in a single JSON-LD graph and point to each other by stable @id, the same way buildwell.partners links its business, website and page records.</li>
+<li><b>Business details search engines and AI assistants can read:</b> the service catalog, areas served, topics the company knows about and its founder, as buildwell.partners lists for itself.</li>
+<li><b>An FAQ block that matches the visible questions word for word,</b> like the "Common Questions" section and FAQ schema on buildwell.partners.</li>
+<li><b>Crawler files:</b> <a href="llms.txt" target="_blank" rel="noopener">llms.txt</a>, <a href="robots.txt" target="_blank" rel="noopener">robots.txt</a> pointing to the sitemap, and <a href="sitemap.xml" target="_blank" rel="noopener">sitemap.xml</a>. buildwell.partners publishes all three.</li>
+<li><b>Search and sharing tags:</b> a unique description, canonical link, Open Graph and Twitter card tags.</li></ul>
+<h2>Added for Majestic</h2>
+<ul class="checks">
+<li><b>Answer-first "Quick answer" blocks</b> at the top of each page, written to be quoted by Google AI Overviews, ChatGPT and Perplexity.</li>
+<li><b>Step-by-step claim guide in HowTo schema,</b> matching the hail claim steps on the page.</li>
 <li><b>Fast by default:</b> no page builder, no jQuery, one inline stylesheet, SVG graphics.</li></ul>
 <h2>Guesses to confirm with Jake</h2>
 <ul class="checks">
