@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>O'Brien's Cafe | Hometown Breakfast in Sedalia, CO since 1994</title>
+<meta name="description" content="O'Brien's Cafe, 5585 US-85 in Sedalia, CO: a hometown breakfast and lunch diner since 1994. Breakfast burritos, cinnamon rolls, grits and homemade pie. Call (303) 688-4672.">
+<meta name="theme-color" content="#9e2b25">
+<style>
+@font-face{font-family:"Alegreya";src:url(fonts/alegreya-latin-500-normal.woff2) format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:"Alegreya";src:url(fonts/alegreya-latin-500-italic.woff2) format("woff2");font-weight:500;font-style:italic;font-display:swap}
+@font-face{font-family:"Alegreya";src:url(fonts/alegreya-latin-700-normal.woff2) format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Alegreya";src:url(fonts/alegreya-latin-800-normal.woff2) format("woff2");font-weight:800;font-display:swap}
+@font-face{font-family:"Work Sans";src:url(fonts/work-sans-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Work Sans";src:url(fonts/work-sans-latin-500-normal.woff2) format("woff2");font-weight:500;font-display:swap}
+@font-face{font-family:"Work Sans";src:url(fonts/work-sans-latin-600-normal.woff2) format("woff2");font-weight:600;font-display:swap}
+:root{--red:#9e2b25;--red-d:#7c1f1a;--mustard:#e3a531;--cream:#fbf4e6;--paper:#fffaf0;--ink:#2a211c;--muted:#6a5b50;--line:#e8dac2;--green:#3f5a3a}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Work Sans",system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.65;font-size:17px}
+a{color:inherit}
+.wrap{width:min(1120px,100% - 32px);margin-inline:auto}
+h1,h2,h3{font-family:"Alegreya",Georgia,serif;line-height:1.08;font-weight:800}
+h2{font-size:clamp(2.1rem,4.6vw,3.2rem);color:var(--red)}
+h3{font-size:1.45rem;font-weight:700}
+.eyebrow{font-weight:600;font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;color:var(--green);display:flex;align-items:center;gap:.6rem;margin-bottom:.8rem}
+.eyebrow::before{content:"";width:28px;height:2px;background:var(--mustard)}
+.lead{color:var(--muted);max-width:60ch;margin-top:1rem;font-size:1.08rem}
+.btn{display:inline-flex;align-items:center;gap:.55rem;padding:.9rem 1.45rem;border-radius:999px;font-weight:600;text-decoration:none;border:2px solid transparent;font-family:inherit;font-size:1rem;cursor:pointer;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-red{background:var(--red);color:#fff}.btn-red:hover{background:var(--red-d)}
+.btn-line{border-color:var(--ink);color:var(--ink)}
+.btn-mus{background:var(--mustard);color:var(--ink)}
+/* top bar */
+.strip{background:var(--red);color:#fbe9d0;font-size:.88rem;text-align:center;padding:.45rem 16px}
+.strip a{color:#fff;font-weight:600}
+header{position:sticky;top:0;z-index:20;background:rgba(251,244,230,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:1rem}
+.brand{display:flex;align-items:center;gap:.7rem;text-decoration:none}
+.brand svg{width:46px;height:46px;flex:none}
+.brand b{font-family:"Alegreya";font-size:1.6rem;font-weight:800;color:var(--red);line-height:1}
+.brand small{display:block;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.nav ul{display:flex;gap:1.6rem;list-style:none;font-weight:500;font-size:.95rem}
+.nav ul a{text-decoration:none}.nav ul a:hover{color:var(--red)}
+.nav .btn{padding:.6rem 1.1rem}
+@media(max-width:880px){.nav ul{display:none}}
+@media(max-width:430px){.nav .btn span{display:none}.nav .btn{padding:.6rem .8rem}.brand b{font-size:1.35rem}}
+/* hero */
+.hero{position:relative;overflow:hidden;background:
+ radial-gradient(circle at 85% 20%,rgba(227,165,49,.25),transparent 45%),var(--paper)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:center;padding:4.5rem 0 4rem}
+.hero h1{font-size:clamp(2.9rem,7vw,5.2rem);color:var(--ink)}
+.hero h1 em{font-style:italic;font-weight:500;color:var(--red)}
+.cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.8rem}
+.facts{display:flex;flex-wrap:wrap;gap:1.8rem;margin-top:2.2rem;padding-top:1.6rem;border-top:1px dashed var(--line)}
+.facts b{display:block;font-family:"Alegreya";font-size:2rem;color:var(--red);line-height:1}
+.facts span{font-size:.88rem;color:var(--muted)}
+.plate{width:100%;max-width:420px;margin-inline:auto}
+@media(max-width:860px){.hero-grid{grid-template-columns:1fr;padding:3rem 0;gap:2rem}.plate{max-width:280px}}
+/* checker */
+.checker{height:18px;background:repeating-conic-gradient(var(--red) 0 25%,var(--paper) 0 50%) 0 0/18px 18px}
+section{padding:5rem 0}
+/* menu */
+.menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.3rem;margin-top:2.5rem}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:1.6rem;position:relative}
+.card .ic{width:52px;height:52px;border-radius:50%;background:#f6e2bd;display:grid;place-items:center;margin-bottom:1rem}
+.card .ic svg{width:28px;height:28px}
+.card p{color:var(--muted);margin-top:.45rem;font-size:.97rem}
+.note{margin-top:1.6rem;font-size:.92rem;color:var(--muted);font-style:italic}
+/* about */
+.about{background:var(--red);color:#fbeedd}
+.about h2{color:#fff}
+.about .eyebrow{color:var(--mustard)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:3.5rem;align-items:center}
+.about p{margin-top:1rem;color:#f3dcc6}
+.timeline{list-style:none;border-left:2px solid rgba(255,255,255,.3);padding-left:1.6rem;display:grid;gap:1.6rem}
+.timeline li{position:relative}
+.timeline li::before{content:"";position:absolute;left:calc(-1.6rem - 7px);top:.4rem;width:12px;height:12px;border-radius:50%;background:var(--mustard)}
+.timeline b{font-family:"Alegreya";font-size:1.5rem;color:#fff;display:block;line-height:1.1}
+.timeline span{color:#f0d6bd;font-size:.95rem}
+@media(max-width:820px){.about-grid{grid-template-columns:1fr;gap:2.5rem}}
+/* why */
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.2rem;margin-top:2.4rem}
+.why div{border-top:3px solid var(--mustard);padding-top:1rem}
+.why p{color:var(--muted);font-size:.96rem;margin-top:.3rem}
+.rating{display:flex;flex-wrap:wrap;align-items:center;gap:1.2rem;margin-top:2.6rem;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:1.4rem 1.6rem}
+.rating b{font-family:"Alegreya";font-size:2.6rem;color:var(--red);line-height:1}
+.stars{color:var(--mustard);font-size:1.3rem;letter-spacing:.1em}
+.rating p{color:var(--muted);font-size:.95rem;flex:1;min-width:220px}
+/* visit */
+.visit{background:var(--paper);border-top:1px solid var(--line)}
+.visit-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:2.5rem;margin-top:2.2rem;align-items:start}
+.hours{width:100%;border-collapse:collapse;font-size:1rem}
+.hours td{padding:.65rem 0;border-bottom:1px dashed var(--line)}
+.hours td:last-child{text-align:right;font-weight:600}
+.hours tr.closed td:last-child{color:var(--red)}
+.addr{margin-top:1.6rem;display:grid;gap:.9rem}
+.addr div{display:flex;gap:.8rem;align-items:flex-start}
+.addr svg{width:22px;height:22px;flex:none;color:var(--red);margin-top:.15rem}
+.map{border-radius:14px;overflow:hidden;border:1px solid var(--line);min-height:360px;background:#eee}
+.map iframe{width:100%;height:400px;border:0;display:block}
+@media(max-width:820px){.visit-grid{grid-template-columns:1fr}}
+/* contact */
+.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:3rem;margin-top:2rem}
+form{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:1.6rem;display:grid;gap:1rem}
+label{font-weight:600;font-size:.9rem;display:grid;gap:.35rem}
+input,textarea,select{font:inherit;padding:.75rem .85rem;border:1px solid #d6c5a8;border-radius:8px;background:#fff;color:var(--ink);width:100%}
+textarea{min-height:120px;resize:vertical}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+@media(max-width:820px){.contact-grid{grid-template-columns:1fr}}
+@media(max-width:480px){.row2{grid-template-columns:1fr}}
+.big-phone{font-family:"Alegreya";font-size:clamp(2rem,6vw,2.8rem);font-weight:800;color:var(--red);text-decoration:none;display:inline-block;margin-top:1rem}
+footer{background:var(--ink);color:#cbbca9;padding:3rem 0 2rem;font-size:.93rem}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2rem}
+footer b{font-family:"Alegreya";font-size:1.5rem;color:#fff}
+.disclaimer{margin-top:2rem;padding-top:1.2rem;border-top:1px solid #4a3f37;font-size:.78rem;color:#9d8f80}
+:focus-visible{outline:3px solid var(--mustard);outline-offset:2px}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Restaurant","name":"O'Brien's Cafe","telephone":"+1-303-688-4672","servesCuisine":["American","Breakfast"],"priceRange":"$","address":{"@type":"PostalAddress","streetAddress":"5585 US-85","addressLocality":"Sedalia","addressRegion":"CO","postalCode":"80135","addressCountry":"US"},"foundingDate":"1994","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Wednesday","Thursday","Friday","Saturday"],"opens":"05:00","closes":"14:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"05:00","closes":"13:00"}]}
+</script>
+</head>
+<body>
+<div class="strip">Open at 5 AM &middot; Closed Tuesdays &middot; Call ahead: <a href="tel:+13036884672">(303) 688-4672</a></div>
+<header>
+ <div class="wrap nav">
+  <a class="brand" href="#top" aria-label="O'Brien's Cafe home">
+   <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="23" fill="#9e2b25"/><path d="M14 20h18v8a9 9 0 0 1-18 0z" fill="#fbf4e6"/><path d="M32 22h3a3 3 0 0 1 0 6h-3" fill="none" stroke="#fbf4e6" stroke-width="2.4"/><path d="M19 10c-2 2 2 4 0 6M24 9c-2 2 2 4 0 6" stroke="#e3a531" stroke-width="2" fill="none" stroke-linecap="round"/><rect x="12" y="36" width="24" height="2.4" rx="1.2" fill="#e3a531"/></svg>
+   <span><b>O'Brien's Cafe</b><small>Sedalia &middot; Since 1994</small></span>
+  </a>
+  <ul><li><a href="#menu">Menu</a></li><li><a href="#story">Our Story</a></li><li><a href="#visit">Hours &amp; Map</a></li><li><a href="#contact">Contact</a></li></ul>
+  <a class="btn btn-red" href="tel:+13036884672"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><span>Call</span></a>
+ </div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding:0">
+ <div class="wrap hero-grid">
+  <div>
+   <p class="eyebrow">Hometown diner on Highway 85</p>
+   <h1>Breakfast the way <em>Sedalia</em> likes it.</h1>
+   <p class="lead">Family-run since 1994, O'Brien's Cafe has been opening its doors at 5 AM for regulars, commuters and neighbors. Breakfast burritos smothered in green chile, warm cinnamon rolls, grits and homemade pie &mdash; served with a smile.</p>
+   <div class="cta">
+    <a class="btn btn-red" href="tel:+13036884672"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Call (303) 688-4672</a>
+    <a class="btn btn-line" href="#visit">Hours &amp; directions</a>
+   </div>
+   <div class="facts">
+    <div><b>1994</b><span>Serving Sedalia</span></div>
+    <div><b>5 AM</b><span>Doors open</span></div>
+    <div><b>4.5&#9733;</b><span>230+ diner ratings</span></div>
+   </div>
+  </div>
+  <svg class="plate" viewBox="0 0 400 400" role="img" aria-label="Illustration of a breakfast plate and coffee">
+   <circle cx="200" cy="210" r="170" fill="#f3e3c4"/>
+   <circle cx="200" cy="210" r="140" fill="#fffaf0" stroke="#e8dac2" stroke-width="4"/>
+   <circle cx="200" cy="210" r="118" fill="none" stroke="#9e2b25" stroke-width="3" stroke-dasharray="6 10"/>
+   <ellipse cx="170" cy="215" rx="70" ry="34" fill="#d9a35a" transform="rotate(-18 170 215)"/>
+   <ellipse cx="170" cy="215" rx="70" ry="34" fill="none" stroke="#b47c38" stroke-width="3" transform="rotate(-18 170 215)"/>
+   <path d="M118 236c30-8 62-30 98-48" stroke="#4f7a3a" stroke-width="10" stroke-linecap="round" opacity=".85"/>
+   <circle cx="255" cy="175" r="34" fill="#fff" /><circle cx="258" cy="172" r="15" fill="#f0b429"/>
+   <g transform="translate(232 238)"><circle r="30" fill="#c98a4b"/><path d="M0 0m-18 0a18 18 0 1 0 36 0a12 12 0 1 0-24 0a6 6 0 1 0 12 0" fill="none" stroke="#fff2dc" stroke-width="5" stroke-linecap="round"/></g>
+   <g transform="translate(318 60)"><rect x="-34" y="0" width="58" height="64" rx="10" fill="#9e2b25"/><path d="M24 14h10a12 12 0 0 1 0 24H24" fill="none" stroke="#9e2b25" stroke-width="7"/><ellipse cx="-5" cy="4" rx="27" ry="6" fill="#5a3320"/><path d="M-14-16c-6 6 6 10 0 16M2-18c-6 6 6 10 0 16" stroke="#cbb89a" stroke-width="4" fill="none" stroke-linecap="round"/></g>
+  </svg>
+ </div>
+ <div class="checker" aria-hidden="true"></div>
+</section>
+
+<section id="menu">
+ <div class="wrap">
+  <p class="eyebrow">What folks come in for</p>
+  <h2>Made-from-scratch favorites</h2>
+  <p class="lead">A classic American breakfast and lunch counter. Here's what regulars and visitors talk about most.</p>
+  <div class="menu-grid">
+   <div class="card"><div class="ic"><svg viewBox="0 0 32 32" fill="none" stroke="#9e2b25" stroke-width="2.2" stroke-linecap="round"><path d="M5 20c6-10 16-14 22-12-2 8-10 16-20 16z"/><path d="M9 20l10-6"/></svg></div><h3>Breakfast Burritos</h3><p>A regular's go-to &mdash; ask for it smothered in green chile.</p></div>
+   <div class="card"><div class="ic"><svg viewBox="0 0 32 32" fill="none" stroke="#9e2b25" stroke-width="2.2" stroke-linecap="round"><circle cx="16" cy="16" r="11"/><path d="M16 16m-5 0a5 5 0 1 0 10 0a3 3 0 1 0-6 0"/></svg></div><h3>Cinnamon Rolls</h3><p>Big, warm and a long-time Sedalia favorite with a cup of coffee.</p></div>
+   <div class="card"><div class="ic"><svg viewBox="0 0 32 32" fill="none" stroke="#9e2b25" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h24L16 7z"/><path d="M8 18h16M11 14h10"/></svg></div><h3>Homemade Pie</h3><p>Save room &mdash; homemade pie is one of the things O'Brien's is known for.</p></div>
+   <div class="card"><div class="ic"><svg viewBox="0 0 32 32" fill="none" stroke="#9e2b25" stroke-width="2.2" stroke-linecap="round"><path d="M5 14h22a11 9 0 0 1-22 0z"/><path d="M12 9c0-2 2-2 2-4M18 9c0-2 2-2 2-4"/></svg></div><h3>Grits &amp; Classic Plates</h3><p>Eggs, grits and the hearty diner breakfasts that keep a small town running.</p></div>
+   <div class="card"><div class="ic"><svg viewBox="0 0 32 32" fill="none" stroke="#9e2b25" stroke-width="2.2" stroke-linecap="round"><path d="M16 4v24M9 9c4 0 7 3 7 7M23 9c-4 0-7 3-7 7M9 17c4 0 7 3 7 7M23 17c-4 0-7 3-7 7"/></svg></div><h3>Gluten-Free Options</h3><p>Gluten-free choices are available &mdash; just ask your server.</p></div>
+   <div class="card"><div class="ic"><svg viewBox="0 0 32 32" fill="none" stroke="#9e2b25" stroke-width="2.2" stroke-linecap="round"><rect x="6" y="10" width="16" height="16" rx="3"/><path d="M22 14h3a3 3 0 0 1 0 6h-3M10 4v3M14 4v3M18 4v3"/></svg></div><h3>Coffee from 5 AM</h3><p>Early riser? Doors open at 5 AM six days a week.</p></div>
+  </div>
+  <p class="note">Full menu and daily specials available at the cafe &mdash; call (303) 688-4672 with any questions.</p>
+ </div>
+</section>
+
+<section class="about" id="story">
+ <div class="wrap about-grid">
+  <div>
+   <p class="eyebrow">Our story</p>
+   <h2>A little taste of home, since 1994</h2>
+   <p>O'Brien's Cafe is run by co-owners Donna Ingman and Arlene O'Brien. Donna opened the cafe in 1994, and for three decades it has been a hometown gathering spot on US-85.</p>
+   <p>The baking was so popular that the same family later opened <strong>Sedalia Bakery</strong> just down the road &mdash; so you know the cinnamon rolls and pies are the real deal.</p>
+  </div>
+  <ul class="timeline">
+   <li><b>1994</b><span>Donna Ingman opens O'Brien's Cafe on Highway 85 in Sedalia.</span></li>
+   <li><b>Every morning</b><span>Doors open at 5 AM for coffee, burritos and breakfast plates.</span></li>
+   <li><b>Sedalia Bakery</b><span>Demand for the baked goods leads the owners to open a scratch bakery in town.</span></li>
+   <li><b>Today</b><span>Still family-run, still homemade, still the hometown breakfast stop.</span></li>
+  </ul>
+ </div>
+</section>
+
+<section>
+ <div class="wrap">
+  <p class="eyebrow">Why people stop in</p>
+  <h2>Small-town diner, big-hearted service</h2>
+  <div class="why">
+   <div><h3>Early hours</h3><p>Open at 5 AM &mdash; breakfast before the workday starts.</p></div>
+   <div><h3>Homemade baking</h3><p>Cinnamon rolls and pies from the family that runs Sedalia Bakery.</p></div>
+   <div><h3>Family-run</h3><p>Same owners for 30+ years, and it shows in every plate.</p></div>
+   <div><h3>Easy to find</h3><p>Right on US-85 in Sedalia, between Castle Rock and Littleton.</p></div>
+  </div>
+  <div class="rating">
+   <div><b>4.5</b><div class="stars" aria-label="4.5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div></div>
+   <p>Average rating across 230+ diner ratings (Restaurantji). Guests consistently mention the breakfast burritos, cinnamon rolls, homemade pies and friendly, hometown service.</p>
+  </div>
+ </div>
+</section>
+
+<section class="visit" id="visit">
+ <div class="wrap">
+  <p class="eyebrow">Hours &amp; location</p>
+  <h2>Come hungry</h2>
+  <div class="visit-grid">
+   <div>
+    <table class="hours" aria-label="Opening hours">
+     <tr><td>Monday</td><td>5:00 AM &ndash; 2:00 PM</td></tr>
+     <tr class="closed"><td>Tuesday</td><td>Closed</td></tr>
+     <tr><td>Wednesday</td><td>5:00 AM &ndash; 2:00 PM</td></tr>
+     <tr><td>Thursday</td><td>5:00 AM &ndash; 2:00 PM</td></tr>
+     <tr><td>Friday</td><td>5:00 AM &ndash; 2:00 PM</td></tr>
+     <tr><td>Saturday</td><td>5:00 AM &ndash; 2:00 PM</td></tr>
+     <tr><td>Sunday</td><td>5:00 AM &ndash; 1:00 PM</td></tr>
+    </table>
+    <div class="addr">
+     <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><span>5585 US-85<br>Sedalia, CO 80135</span></div>
+     <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg><a href="tel:+13036884672">(303) 688-4672</a></div>
+    </div>
+    <div class="cta"><a class="btn btn-mus" href="https://www.google.com/maps/dir/?api=1&amp;destination=5585+US-85+Sedalia+CO+80135" target="_blank" rel="noopener">Get directions</a></div>
+   </div>
+   <div class="map"><iframe title="Map to O'Brien's Cafe" loading="lazy" src="https://www.google.com/maps?q=5585%20US-85%2C%20Sedalia%2C%20CO%2080135&amp;output=embed"></iframe></div>
+  </div>
+ </div>
+</section>
+
+<section id="contact">
+ <div class="wrap contact-grid">
+  <div>
+   <p class="eyebrow">Get in touch</p>
+   <h2>Questions? Give us a call</h2>
+   <p class="lead">Questions about the menu, gluten-free options or bringing a group? A phone call is the fastest way to reach us.</p>
+   <a class="big-phone" href="tel:+13036884672">(303) 688-4672</a>
+   <p style="color:var(--muted);margin-top:.6rem">5585 US-85, Sedalia, CO 80135</p>
+  </div>
+  <form onsubmit="event.preventDefault();this.querySelector('button').textContent='Thanks! Please call to confirm.';">
+   <div class="row2">
+    <label>Name<input name="name" autocomplete="name" required></label>
+    <label>Phone<input name="phone" type="tel" autocomplete="tel" required></label>
+   </div>
+   <label>I'm asking about
+    <select name="topic"><option>The menu / gluten-free options</option><option>Bringing a group</option><option>Something else</option></select>
+   </label>
+   <label>Message<textarea name="message" placeholder="Date, number of people, what you'd like..."></textarea></label>
+   <button class="btn btn-red" type="submit" style="justify-content:center">Send request</button>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <div class="foot">
+   <div><b>O'Brien's Cafe</b><p>Hometown breakfast &amp; lunch since 1994</p></div>
+   <div>5585 US-85, Sedalia, CO 80135<br><a href="tel:+13036884672">(303) 688-4672</a></div>
+   <div>Mon, Wed&ndash;Sat 5 AM&ndash;2 PM<br>Sun 5 AM&ndash;1 PM &middot; Tue closed</div>
+  </div>
+  <p class="disclaimer">Concept preview prepared for O'Brien's Cafe by Buildwell Partners. Not the business's official website.</p>
+ </div>
+</footer>
+</body>
+</html>
